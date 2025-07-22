@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="mblh5nkcykn_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.TController">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Controller.TController.FEntities" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Controller.TController.FServices" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Controller.TController.Create()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Controller.TController.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Controller.TController.New()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Controller.TController.Entities()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Controller.TController.Services()" />
+    </reference>
+    <reference referencedUin="design:view:::w08sla0deuk_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Entities.TControllerEntities" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Entities.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::4505vwgx9r1ew2joi_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Services.TControllerServices" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Services.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::crl8pow6er7v8nc9j_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Interfaces.iControllerServices" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Interfaces.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Interfaces.iControllerServicesGeneric" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Interfaces.iController" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.Interfaces.iControllerEntities" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Controller.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+  </view>
+</nodeSet>

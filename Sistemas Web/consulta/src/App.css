@@ -1,0 +1,30 @@
+body{
+  margin: 0px;
+}
+
+.img-avatar{
+  max-width: 30px;
+  border-radius: 50px;
+}
+
+.btn-editar{
+  background-color: rgb(11, 133, 58);
+  color: #fff;
+  border: 0px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-excluir{
+  background-color: rgb(191, 44, 14);
+  color: #fff;
+  border: 0px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.m-left{
+  margin-left: 10px;
+}

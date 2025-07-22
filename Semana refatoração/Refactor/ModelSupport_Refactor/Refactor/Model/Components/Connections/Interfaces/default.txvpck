@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="imsh2tiijib85h6cg_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.Active(System.Boolean)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.AddParam(System.string,System.Variant)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.AddParam(System.string,System.Classes.TPersistent)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.DataSet()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.ExecSQL()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.Open()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.SQL(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections.SQLClear()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Interfaces.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+  </view>
+</nodeSet>

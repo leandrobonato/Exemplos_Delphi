@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="3p62j60b0l3txzxfm_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::693xpudpnf8jnz53t_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,117,151" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Interfaces.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::21d0vfcfhg8a6q69n_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="146,1,145,151" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Categoria.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Categoria.TModelDAOCategoria" />
+    </reference>
+    <reference referencedUin="design:view:::0knwucsyah8nec4jp_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="146,171,123,151" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Users.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

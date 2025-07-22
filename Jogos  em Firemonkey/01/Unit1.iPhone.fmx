@@ -1,0 +1,14 @@
+inherited Form1_iPhone: TForm1_iPhone
+  ClientHeight = 460
+  ClientWidth = 320
+  DesignerMasterStyle = 2
+  inherited Viewport3D1: TViewport3D
+    Size.Width = 320.000000000000000000
+    Size.Height = 460.000000000000000000
+    inherited Cube1: TCube
+      Quanternion = 
+        '(-0.00260786945000291,-0.0086503429338336,-0.0120620066300035,-0' +
+        '.999885678291321)'
+    end
+  end
+end

@@ -1,0 +1,133 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 480
+  ClientWidth = 640
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 640.000000000000000000
+    Size.Height = 480.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = PlatformDefault
+    Sizes = (
+      640s
+      454s
+      640s
+      454s
+      640s
+      454s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 63.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Request'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object imgRequest: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 393.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object Button2: TButton
+        Align = Bottom
+        Position.Y = 393.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 61.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        Text = 'Send Request to DeepAi'
+        OnClick = Button2Click
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 71.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Response'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object MemoResponse: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 393.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 636.000000000000000000
+        Viewport.Height = 389.000000000000000000
+      end
+      object Button1: TButton
+        Align = Bottom
+        Position.Y = 393.000000000000000000
+        Size.Width = 640.000000000000000000
+        Size.Height = 61.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        Text = 'Load colorized image'
+        OnClick = Button1Click
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 64.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Imagem'
+      ExplicitSize.cx = 69.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object imgResponse: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Client
+        Size.Width = 640.000000000000000000
+        Size.Height = 454.000000000000000000
+        Size.PlatformDefault = False
+      end
+    end
+  end
+  object NetHTTPClient1: TNetHTTPClient
+    UserAgent = 'Embarcadero URI Client/1.0'
+    Left = 240
+    Top = 232
+  end
+  object NetHTTPRequest1: TNetHTTPRequest
+    MethodString = 'POST'
+    Client = NetHTTPClient1
+    Left = 408
+    Top = 216
+  end
+  object OpenDialog1: TOpenDialog
+    Left = 312
+    Top = 232
+  end
+end

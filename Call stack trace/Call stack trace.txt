@@ -1,0 +1,179 @@
+procedure WndProc(var Message: TMessage);
+var
+vTagMsg: TMsg;
+begin
+  vTagMsg.message := Message.Msg; // copia o valor do campo Msg
+  vTagMsg.wParam := Message.WParam;
+  vTagMsg.lParam := Message.LParam;
+  LogMessage(vTagMsg);
+end;
+
+
+
+procedure LogMessage(const Msg: tagMSG);
+var
+  StackTrace: TStackTraceList;
+  LogMessage: string;
+  StackText: string;
+  i: Integer;
+begin
+  StackTrace := TStackTraceList.Create;
+  try
+    StackTrace.TrimLines := True;
+    StackTrace.Duplicates := dupAccept;
+    StackText := StackTrace.ToString;
+    StackTrace.AddTrace(ExceptAddr);
+  finally
+    StackTrace.Free;
+  end;
+
+  // add the call stack to the log message
+  LogMessage := Format('Message: %s - WParam: %d - LParam: %d - Call Stack: %s',
+    [IntToStr(Msg.Message), Msg.WParam, Msg.LParam, StackText]);
+
+  // write the log message to a text file
+  WriteLog(LogMessage);
+end;
+
+
+
+unit MyStackTrace;
+
+interface
+
+uses
+  System.SysUtils, classes;
+
+type
+  TStackFrame = record
+    AddrPCOffset: Pointer;
+    AddrReturn: Pointer;
+    AddrFrameOffset: Pointer;
+    AddrStackOffset: Pointer;
+  end;
+
+  TStackTraceList = class
+  private
+    FList: TList;
+    FDuplicates: TDuplicates;
+    FTrimLines: Boolean;
+    function GetItem(Index: Integer): TStackFrame;
+    function GetCount: Integer;
+  public
+    constructor Create;
+    destructor Destroy; override;
+    procedure Clear;
+    procedure Add(Item: TStackFrame);
+    procedure AddTrace(ExceptAddr: Pointer);
+    property TrimLines: Boolean read FTrimLines write FTrimLines;
+    property Duplicates: TDuplicates read FDuplicates write FDuplicates;
+    property Items[Index: Integer]: TStackFrame read GetItem; default;
+    property Count: Integer read GetCount;
+  end;
+
+  function GetStackFrame(Addr: Pointer): TStackFrame;
+
+implementation
+
+uses
+  Winapi.Windows;
+
+type
+  PStackFrame = ^TStackFrame;
+
+constructor TStackTraceList.Create;
+begin
+  FList := TList.Create;
+end;
+
+destructor TStackTraceList.Destroy;
+begin
+  Clear;
+  FList.Free;
+  inherited;
+end;
+
+procedure TStackTraceList.AddTrace(ExceptAddr: Pointer);
+begin
+  Add(GetStackFrame(@ExceptAddr));
+end;
+
+procedure TStackTraceList.Clear;
+var
+  I: Integer;
+begin
+  for I := FList.Count - 1 downto 0 do
+    Dispose(PStackFrame(FList[I]));
+  FList.Clear;
+end;
+
+procedure TStackTraceList.Add(Item: TStackFrame);
+var
+  NewItem: PStackFrame;
+begin
+  New(NewItem);
+  NewItem^ := Item;
+  FList.Add(NewItem);
+end;
+
+function TStackTraceList.GetItem(Index: Integer): TStackFrame;
+begin
+  if (Index < 0) or (Index >= FList.Count) then
+    raise EListError.CreateFmt('Index %d out of range', [Index]);
+  Result := PStackFrame(FList[Index])^;
+end;
+
+function TStackTraceList.GetCount: Integer;
+begin
+  Result := FList.Count;
+end;
+
+function GetStackFrame(Addr: Pointer): TStackFrame;
+asm
+  mov eax, [ebp + 4]
+  mov edx, [ebp]
+  mov ecx, [edx + 4]
+  cmp eax, ecx
+  jae @@Exit
+  mov eax, [eax]
+  add eax, 4
+  @@Loop:
+  mov ecx, [eax]
+  cmp eax, ecx
+  je @@Done
+  mov eax, ecx
+  mov ecx, [eax]
+  cmp ecx, edx
+  jae @@Done
+  mov edx, eax
+  jmp @@Loop
+  @@Done:
+  mov ecx, [eax + 4]
+  mov edx, [eax + 8]
+  mov eax, [eax + 12]
+  mov [ebp - 4], ecx
+  mov [ebp - 8], edx
+  mov [ebp - 12], eax
+  mov [ebp - 16], 0
+  @@Exit:
+end;
+
+function CreateStackTraceList(StartFrame: Pointer): TStackTraceList;
+var
+  StackFrame: TStackFrame;
+begin
+  Result := TStackTraceList.Create;
+  while StartFrame <> nil do
+  begin
+    StackFrame := GetStackFrame(StartFrame);
+    Result.Add(StackFrame);
+    StartFrame := StackFrame.AddrFrameOffset;
+  end;
+end;
+
+function GetStackTraceList(StartFrame: Pointer): TStackTraceList;
+begin
+  Result := CreateStackTraceList(StartFrame);
+end;
+
+end.

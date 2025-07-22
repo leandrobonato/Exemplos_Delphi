@@ -1,0 +1,112 @@
+object FrmPerfil: TFrmPerfil
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 550
+  ClientWidth = 400
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnClose = FormClose
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object lytFundo: TLayout
+    Align = Client
+    Size.Width = 400.000000000000000000
+    Size.Height = 550.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    object Rectangle1: TRectangle
+      Align = Top
+      Fill.Color = xFFF3E570
+      Size.Width = 400.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      object Label1: TLabel
+        Align = Contents
+        StyledSettings = [Family, Style, FontColor]
+        Size.Width = 400.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 20.000000000000000000
+        TextSettings.HorzAlign = Center
+        Text = 'Perfil'
+        TabOrder = 3
+      end
+      object img_back: TImage
+        MultiResBitmap.Width = 32
+        MultiResBitmap = <
+          item
+            Width = 32
+            Height = 32
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000020000000200806000000737A7A
+              F4000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              00AE494441545847ED96C10D8240104507EF7443549AF3E0D578F56005B66005
+              860EB8121B101BD0FFDD9D8460A242C8AC24F39217863DF0FF422088E3CC9D32
+              9A0406DF610B575CB044C31FD11D34A31F7E801934C1C33D7CF2F04F1763F819
+              E6AF33911A6E218B8CA18197307EA7BFF3293CC13716F1988CA18F6003B99B31
+              5C6115C6DF61097EEBF5361EA1D91BA07809650DBD04F98B12FC03EA96D84373
+              B4C40D165C48014B2CC3E838B344E409FDE658B9AE9DF4EA0000000049454E44
+              AE426082}
+            FileName = 
+              'D:\99Coders\Posts\119 - Transicao entre forms -------\Fontes\Ima' +
+              'ges\back.png'
+          end>
+        Align = Left
+        Opacity = 0.800000011920929000
+        Margins.Left = 10.000000000000000000
+        Margins.Top = 9.000000000000000000
+        Margins.Bottom = 9.000000000000000000
+        Position.X = 10.000000000000000000
+        Position.Y = 9.000000000000000000
+        Size.Width = 40.000000000000000000
+        Size.Height = 32.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = img_backClick
+      end
+    end
+    object FloatAnimation1: TFloatAnimation
+      AnimationType = InOut
+      Delay = 0.200000002980232200
+      Duration = 0.200000002980232200
+      Interpolation = Circular
+      PropertyName = 'Opacity'
+      StartValue = 0.000000000000000000
+      StopValue = 1.000000000000000000
+    end
+    object Label4: TLabel
+      Align = Top
+      StyledSettings = [Family]
+      Margins.Left = 20.000000000000000000
+      Margins.Right = 20.000000000000000000
+      Margins.Bottom = 20.000000000000000000
+      Position.X = 20.000000000000000000
+      Position.Y = 50.000000000000000000
+      Size.Width = 360.000000000000000000
+      Size.Height = 383.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = xFF9D9D9D
+      TextSettings.VertAlign = Leading
+      Text = 
+        'O iPhone X tem tela Super Retina HD de 5,8 polegadas sem bordas,' +
+        ' HDR e True Tone(1). Ele possui o vidro mais resistente da categ' +
+        'oria, moldura de a'#231'o inoxid'#225'vel de qualidade cir'#250'rgica, recarga ' +
+        'sem fio(2) e toda a sua estrutura '#233' protegida contra '#225'gua e poei' +
+        'ra(3). A c'#226'mera dupla de 12 MP com dupla estabiliza'#231#227'o de imagem' +
+        ' tira fotos lindas mesmo em pouca luz. Usando a c'#226'mera TrueDepth' +
+        ', voc'#234' tira selfies com modo Retrato e a nova Ilumina'#231#227'o de Retr' +
+        'ato(4). O Face ID permite desbloquear o celular s'#243' com o olhar, ' +
+        'e apps e jogos ganham vida de um jeito impressionante em realida' +
+        'de aumentada. Tanto desempenho s'#243' '#233' poss'#237'vel gra'#231'as ao chip A11 ' +
+        'Bionic, o mais inteligente e poderoso em um smartphone. '#201' por tu' +
+        'do isso que o iPhone X inicia uma nova era para o iPhone.'
+      TabOrder = 1
+    end
+  end
+end

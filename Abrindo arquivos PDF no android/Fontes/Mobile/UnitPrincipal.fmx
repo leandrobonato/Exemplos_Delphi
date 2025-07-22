@@ -1,0 +1,75 @@
+object Form1: TForm1
+  Left = 0
+  Top = 0
+  Caption = 'File Transfer'
+  ClientHeight = 524
+  ClientWidth = 309
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Client
+    Enabled = False
+    Size.Width = 309.000000000000000000
+    Size.Height = 344.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 305.000000000000000000
+    Viewport.Height = 340.000000000000000000
+  end
+  object Button3: TButton
+    Align = Bottom
+    Position.Y = 344.000000000000000000
+    Size.Width = 309.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 2
+    Text = 'Delete File'
+    OnClick = Button3Click
+  end
+  object Button2: TButton
+    Align = Bottom
+    Position.Y = 404.000000000000000000
+    Size.Width = 309.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Text = 'Open File'
+    OnClick = Button2Click
+  end
+  object Button4: TButton
+    Align = Bottom
+    Position.Y = 464.000000000000000000
+    Size.Width = 309.000000000000000000
+    Size.Height = 60.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    Text = 'Download PDF - RDW'
+    OnClick = Button4Click
+  end
+  object RESTClient1: TRESTClient
+    Authenticator = HTTPBasicAuthenticator1
+    BaseURL = 'http://192.168.15.43:9000'
+    Params = <>
+    Left = 32
+    Top = 24
+  end
+  object HTTPBasicAuthenticator1: THTTPBasicAuthenticator
+    Username = 'testserver'
+    Password = 'testserver'
+    Left = 136
+    Top = 24
+  end
+  object ReqRDW: TRESTRequest
+    AssignedValues = [rvConnectTimeout, rvReadTimeout]
+    Client = RESTClient1
+    Params = <>
+    Resource = 'getfile'
+    Left = 248
+    Top = 24
+  end
+end

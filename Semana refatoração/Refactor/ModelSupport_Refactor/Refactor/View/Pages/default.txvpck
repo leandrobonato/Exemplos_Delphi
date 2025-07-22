@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="z6eth78ylp7i2zagi_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::4smurlxctebmb3run_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.View.Pages.Users.TPageUsers" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.View.Pages.Users.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,199 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Gestures'
+  ClientHeight = 620
+  ClientWidth = 365
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  Touch.GestureManager = GestureManager1
+  Touch.InteractiveGestures = [LongTap]
+  OnGesture = FormGesture
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Bottom
+    Position.Y = 408.000000000000000000
+    Size.Width = 365.000000000000000000
+    Size.Height = 212.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    Visible = False
+    XRadius = 10.000000000000000000
+    YRadius = 10.000000000000000000
+    OnClick = Rectangle1Click
+  end
+  object TabControl1: TTabControl
+    Touch.GestureManager = GestureManager1
+    OnGesture = TabControl1Gesture
+    Align = Top
+    Size.Width = 365.000000000000000000
+    Size.Height = 137.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = None
+    Sizes = (
+      365s
+      137s
+      365s
+      137s
+      365s
+      137s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      object Label1: TLabel
+        Align = Center
+        StyledSettings = [Family, FontColor]
+        Size.Width = 183.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 26.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Label1'
+        TabOrder = 0
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      object Label2: TLabel
+        Align = Center
+        StyledSettings = [Family, FontColor]
+        Size.Width = 183.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 26.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Label2'
+        TabOrder = 0
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem3'
+      object Label3: TLabel
+        Align = Center
+        StyledSettings = [Family, FontColor]
+        Size.Width = 183.000000000000000000
+        Size.Height = 70.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 26.000000000000000000
+        TextSettings.Font.StyleExt = {00060000000000000004000000}
+        TextSettings.HorzAlign = Center
+        Text = 'Label3'
+        TabOrder = 0
+      end
+    end
+  end
+  object ListBox1: TListBox
+    Touch.GestureManager = GestureManager1
+    Touch.InteractiveGestures = [Pan, LongTap]
+    OnGesture = ListBox1Gesture
+    Align = Top
+    Position.Y = 137.000000000000000000
+    Size.Width = 365.000000000000000000
+    Size.Height = 232.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 4
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    Viewport.Width = 361.000000000000000000
+    Viewport.Height = 228.000000000000000000
+    object ListBoxItem1: TListBoxItem
+      Size.Width = 361.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'ListBoxItem1'
+    end
+    object ListBoxItem2: TListBoxItem
+      Position.Y = 50.000000000000000000
+      Size.Width = 361.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'ListBoxItem2'
+    end
+    object ListBoxItem3: TListBoxItem
+      Position.Y = 100.000000000000000000
+      Size.Width = 361.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'ListBoxItem3'
+    end
+  end
+  object GestureManager1: TGestureManager
+    Sensitivity = 80.000000000000000000
+    Left = 56
+    Top = 400
+    GestureData = <
+      item
+        Control = Owner
+        Collection = <
+          item
+            GestureID = sgiUp
+          end
+          item
+            GestureID = sgiDown
+          end
+          item
+            Action = ActTab2
+            GestureID = sgiCircle
+          end>
+      end
+      item
+        Control = TabControl1
+        Collection = <
+          item
+            GestureID = sgiLeft
+          end
+          item
+            GestureID = sgiRight
+          end>
+      end
+      item
+        Control = ListBox1
+        Collection = <>
+      end>
+  end
+  object ActionList1: TActionList
+    Left = 224
+    Top = 408
+    object ActTab2: TChangeTabAction
+      Category = 'Tab'
+      Tab = TabItem2
+    end
+  end
+end

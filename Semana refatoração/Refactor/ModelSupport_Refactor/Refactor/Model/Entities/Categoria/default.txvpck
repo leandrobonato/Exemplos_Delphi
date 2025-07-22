@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="60e7vo97ge8oe3peh_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Categoria.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.FParent" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.FDESCRICAO" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.FID_CATEGORIA" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.FINDICE_ICONE" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.FICONE" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.Create(Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;Refactor.Model.Entities.Categoria.TCategoria&gt;)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.ID_CATEGORIA(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.ID_CATEGORIA()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.DESCRICAO(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.DESCRICAO()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.ICONE(Vcl.Graphics.TBitmap)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.ICONE()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.INDICE_ICONE(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.INDICE_ICONE()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria.End()" />
+    </reference>
+  </view>
+</nodeSet>

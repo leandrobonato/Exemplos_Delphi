@@ -1,0 +1,15 @@
+﻿[fdQrySQLite]
+Coordinates=74,10,74,51
+
+[dsSqlite]
+Coordinates=10,10,54,51
+
+[fdConexãoSQLite]
+Coordinates=133,71,100,33
+
+[FDGUIxWaitCursor1]
+Coordinates=10,71,113,33
+
+[FDPhysSQLiteDriverLink1]
+Coordinates=158,10,142,33
+

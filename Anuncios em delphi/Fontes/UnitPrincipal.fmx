@@ -1,0 +1,35 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Form1'
+  ClientHeight = 565
+  ClientWidth = 403
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Memo1: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    Align = Top
+    Size.Width = 403.000000000000000000
+    Size.Height = 161.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 399.000000000000000000
+    Viewport.Height = 157.000000000000000000
+  end
+  object BannerAd1: TBannerAd
+    Align = Bottom
+    Position.Y = 515.000000000000000000
+    TestMode = True
+    OnActionCanBegin = BannerAd1ActionCanBegin
+    OnActionDidFinish = BannerAd1ActionDidFinish
+    OnWillLoad = BannerAd1WillLoad
+    OnDidLoad = BannerAd1DidLoad
+    OnDidFail = BannerAd1DidFail
+  end
+end

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="q39acar99q797xsyf_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Behaviors.TModelBehaviors">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Behaviors.TModelBehaviors.BehaviorException(System.TObject,System.SysUtils.Exception)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Behaviors.TModelBehaviors.Create()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Behaviors.TModelBehaviors.Destroy()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Behaviors.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:l_ast:src:Refactor:Refactor.Model.Behaviors.@unitclass.ModelBehaviors" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Behaviors.@unitclass.ModelBehaviors" />
+    </reference>
+  </view>
+</nodeSet>

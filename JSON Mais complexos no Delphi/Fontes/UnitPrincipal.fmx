@@ -1,0 +1,106 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'JSON'
+  ClientHeight = 643
+  ClientWidth = 792
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object Layout1: TLayout
+    Align = Bottom
+    Position.Y = 584.000000000000000000
+    Size.Width = 792.000000000000000000
+    Size.Height = 59.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    object btnProcessar: TButton
+      Align = Left
+      StyledSettings = [Family, FontColor]
+      Size.Width = 176.000000000000000000
+      Size.Height = 59.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 3
+      Text = 'Gerar JSON'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      OnClick = btnProcessarClick
+    end
+    object Button1: TButton
+      Align = Left
+      StyledSettings = [Family, FontColor]
+      Position.X = 176.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 59.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 2
+      Text = 'Gerar JSON2'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      OnClick = Button1Click
+    end
+    object Button2: TButton
+      Align = Left
+      StyledSettings = [Family, FontColor]
+      Position.X = 352.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 59.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Gerar JSON3'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      OnClick = Button2Click
+    end
+    object Button3: TButton
+      Align = Left
+      StyledSettings = [Family, FontColor]
+      Position.X = 528.000000000000000000
+      Size.Width = 176.000000000000000000
+      Size.Height = 59.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Text = 'Gerar JSON4'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      OnClick = Button3Click
+    end
+  end
+  object mJson: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    StyledSettings = [Style, FontColor]
+    TextSettings.Font.Family = 'Courier New'
+    TextSettings.Font.Size = 22.000000000000000000
+    Align = Client
+    Size.Width = 792.000000000000000000
+    Size.Height = 584.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    Viewport.Width = 788.000000000000000000
+    Viewport.Height = 580.000000000000000000
+  end
+  object Conn: TFDConnection
+    Params.Strings = (
+      'DriverID=SQLite')
+    LoginPrompt = False
+    Left = 72
+    Top = 48
+  end
+  object FDPhysSQLiteDriverLink1: TFDPhysSQLiteDriverLink
+    Left = 176
+    Top = 48
+  end
+  object qry: TFDQuery
+    Connection = Conn
+    Left = 72
+    Top = 120
+  end
+  object qryDetalhe: TFDQuery
+    Connection = Conn
+    Left = 176
+    Top = 120
+  end
+end

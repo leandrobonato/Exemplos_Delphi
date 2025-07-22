@@ -1,0 +1,2120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Model name="Refactor" id="Refactor" language="delphi">
+  <Diagram name="default" id="ID=5" metaclass="Namespace Diagram" file="default.txvpck.html">
+    <Property name="defaultDiagram">true</Property>
+    <DiagramReference id="ID=190" element="ID=3" metaclass="Namespace">
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <DiagramReference id="ID=192" element="ID=187" metaclass="Class">
+        <Property name="Persistent">False</Property>
+        <Property name="Extends">Vcl.Forms.TForm</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Sealed">False</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=193" element="ID=188" metaclass="Module" />
+    </DiagramReference>
+    <DiagramReference id="ID=191" element="ID=4" metaclass="Namespace">
+      <Property name="Gradient color 2">255, 255, 255</Property>
+      <Property name="Color Area">Whole Shape</Property>
+      <Property name="Gradient Mode">Vertical</Property>
+      <Property name="Gradient ON">False</Property>
+      <Property name="Gradient color 1">255, 255, 255</Property>
+      <DiagramReference id="ID=235" element="ID=6" metaclass="Module" />
+    </DiagramReference>
+  </Diagram>
+  <Package name="uFormPrincipal" id="ID=3">
+    <Diagram name="uFormPrincipal" id="ID=189" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=237" element="ID=187" metaclass="Class">
+        <Property name="Persistent">False</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Extends">Vcl.Forms.TForm</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Sealed">False</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=238" element="ID=188" metaclass="Module">
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <DiagramReference id="ID=256" element="ID=232" metaclass="Association Link">
+          <Property name="Type">association</Property>
+          <Property name="Directed">False</Property>
+          <Property name="Client">Form1</Property>
+          <Property name="Supplier">TForm1</Property>
+        </DiagramReference>
+      </DiagramReference>
+    </Diagram>
+    <Classifier name="TForm1" id="ID=187" type="Class" visibility="public">
+      <Property name="Persistent">False</Property>
+      <Property name="Extends">Vcl.Forms.TForm</Property>
+      <Property name="Abstract">False</Property>
+      <Property name="Sealed">False</Property>
+      <Field fieldType="Field" elementName="FController" id="ID=209" typeref="ID=84" type="iController" isPrimitive="false" visibility="internal">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">iController</Property>
+      </Field>
+      <Method id="ID=203" name="Button1Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=203_35340701" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <ReturnType id="ID=203" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=204" name="Button2Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=204_44024524" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <ReturnType id="ID=204" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=205" name="FormCreate" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=205_9216716" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <ReturnType id="ID=205" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=206" name="Button3Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=206_8356549" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <ReturnType id="ID=206" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=207" name="Button4Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=207_5791838" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <ReturnType id="ID=207" type="" isPrimitive="true" />
+      </Method>
+      <Method id="ID=208" name="Button5Click" isSubroutine="true" visibility="public">
+        <Parameter elementName="Sender" id="ID3=208_66485695" type="TObject" systemType="TObject" isPrimitive="false" />
+        <Property name="Override">False</Property>
+        <Property name="Reintroduce">False</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Virtual">False</Property>
+        <Property name="Final">False</Property>
+        <Property name="Class">False</Property>
+        <ReturnType id="ID=208" type="" isPrimitive="true" />
+      </Method>
+      <Link targetName="FController" id="ID=230" metaclass="Association Link" idref="ID=84">
+        <Property name="Type">association</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">FController</Property>
+        <Property name="Supplier">iController</Property>
+      </Link>
+      <Extends idref="ID=212" refFN="Vcl.Forms.TForm" doom="true" />
+      <Uses>
+        <Use element="ID=231" type="field_type" />
+      </Uses>
+      <Field fieldType="Field" elementName="DBGrid1" id="ID=194" type="TDBGrid" systemType="TDBGrid" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TDBGrid</Property>
+      </Field>
+      <Field fieldType="Field" elementName="DataSource1" id="ID=195" type="TDataSource" systemType="TDataSource" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TDataSource</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Button1" id="ID=196" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TButton</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Edit1" id="ID=197" type="TEdit" systemType="TEdit" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TEdit</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Image1" id="ID=198" type="TImage" systemType="TImage" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TImage</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Button2" id="ID=199" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TButton</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Button3" id="ID=200" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TButton</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Button4" id="ID=201" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TButton</Property>
+      </Field>
+      <Field fieldType="Field" elementName="Button5" id="ID=202" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+        <Property name="Const">False</Property>
+        <Property name="Class">False</Property>
+        <Property name="Type">TButton</Property>
+      </Field>
+    </Classifier>
+    <Classifier name="globals uFormPrincipal" id="ID=188" type="Module" visibility="public">
+      <Link targetName="Form1" id="ID=232" metaclass="Association Link" idref="ID=187">
+        <Property name="Type">association</Property>
+        <Property name="Directed">False</Property>
+        <Property name="Client">Form1</Property>
+        <Property name="Supplier">TForm1</Property>
+      </Link>
+      <Uses />
+      <Field fieldType="Field" elementName="Form1" id="ID=231" typeref="ID=187" type="TForm1" isPrimitive="false" visibility="internal">
+        <Property name="Const">False</Property>
+        <Property name="Type">TForm1</Property>
+      </Field>
+    </Classifier>
+  </Package>
+  <Package name="Refactor" id="ID=4">
+    <Diagram name="Refactor" id="ID=10" metaclass="Namespace Diagram" file="default.txvpck.html">
+      <Property name="defaultDiagram">true</Property>
+      <DiagramReference id="ID=63" element="ID=7" metaclass="Namespace">
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="bounds">10,10,110,129</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=64" element="ID=8" metaclass="Namespace">
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="bounds">129,1,229,165</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=65" element="ID=6" metaclass="Module">
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+      </DiagramReference>
+      <DiagramReference id="ID=66" element="ID=9" metaclass="Namespace">
+        <Property name="Gradient color 2">255, 255, 255</Property>
+        <Property name="Color Area">Whole Shape</Property>
+        <Property name="Gradient Mode">Vertical</Property>
+        <Property name="Gradient ON">False</Property>
+        <Property name="Gradient color 1">255, 255, 255</Property>
+        <Property name="bounds">267,1,376,199</Property>
+        <DiagramReference id="ID=79" element="ID=11" metaclass="Class">
+          <Property name="Persistent">False</Property>
+          <Property name="Extends">System.TInterfacedObject</Property>
+          <Property name="Implements">Refactor.Controller.Interfaces.iController</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Sealed">False</Property>
+        </DiagramReference>
+        <DiagramReference id="ID=87" element="ID=15" metaclass="Module" />
+      </DiagramReference>
+    </Diagram>
+    <Package name="View" id="ID=7">
+      <Diagram name="View" id="ID=62" metaclass="Namespace Diagram" file="default.txvpck.html">
+        <Property name="defaultDiagram">true</Property>
+        <DiagramReference id="ID=257" element="ID=61" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+        </DiagramReference>
+      </Diagram>
+      <Package name="Pages" id="ID=61">
+        <Diagram name="Pages" id="ID=68" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=262" element="ID=67" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <DiagramReference id="ID=263" element="ID=258" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Extends">Vcl.Forms.TForm</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=264" element="ID=259" metaclass="Module" />
+          </DiagramReference>
+        </Diagram>
+        <Package name="Users" id="ID=67">
+          <Diagram name="Users" id="ID=260" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=289" element="ID=258" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Extends">Vcl.Forms.TForm</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=290" element="ID=259" metaclass="Module">
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <DiagramReference id="ID=305" element="ID=288" metaclass="Association Link">
+                <Property name="Type">association</Property>
+                <Property name="Directed">False</Property>
+                <Property name="Client">PageUsers</Property>
+                <Property name="Supplier">TPageUsers</Property>
+              </DiagramReference>
+            </DiagramReference>
+          </Diagram>
+          <Classifier name="TPageUsers" id="ID=258" type="Class" visibility="public">
+            <Property name="Persistent">False</Property>
+            <Property name="Extends">Vcl.Forms.TForm</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Field fieldType="Field" elementName="FController" id="ID=277" typeref="ID=84" type="iController" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">iController</Property>
+            </Field>
+            <Method id="ID=272" name="FormCreate" isSubroutine="true" visibility="public">
+              <Parameter elementName="Sender" id="ID3=272_36560874" type="TObject" systemType="TObject" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=272" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=273" name="Button1Click" isSubroutine="true" visibility="public">
+              <Parameter elementName="Sender" id="ID3=273_4876303" type="TObject" systemType="TObject" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=273" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=274" name="Button3Click" isSubroutine="true" visibility="public">
+              <Parameter elementName="Sender" id="ID3=274_59436263" type="TObject" systemType="TObject" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=274" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=275" name="Button4Click" isSubroutine="true" visibility="public">
+              <Parameter elementName="Sender" id="ID3=275_49608012" type="TObject" systemType="TObject" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=275" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=276" name="Button2Click" isSubroutine="true" visibility="public">
+              <Parameter elementName="Sender" id="ID3=276_58826021" type="TObject" systemType="TObject" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=276" type="" isPrimitive="true" />
+            </Method>
+            <Link targetName="FController" id="ID=286" metaclass="Association Link" idref="ID=84">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FController</Property>
+              <Property name="Supplier">iController</Property>
+            </Link>
+            <Extends idref="ID=212" refFN="Vcl.Forms.TForm" doom="true" />
+            <Uses>
+              <Use element="ID=287" type="field_type" />
+            </Uses>
+            <Field fieldType="Field" elementName="Edit1" id="ID=265" type="TEdit" systemType="TEdit" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TEdit</Property>
+            </Field>
+            <Field fieldType="Field" elementName="Button2" id="ID=266" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TButton</Property>
+            </Field>
+            <Field fieldType="Field" elementName="Button1" id="ID=267" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TButton</Property>
+            </Field>
+            <Field fieldType="Field" elementName="Button3" id="ID=268" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TButton</Property>
+            </Field>
+            <Field fieldType="Field" elementName="Button4" id="ID=269" type="TButton" systemType="TButton" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TButton</Property>
+            </Field>
+            <Field fieldType="Field" elementName="DBGrid1" id="ID=270" type="TDBGrid" systemType="TDBGrid" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TDBGrid</Property>
+            </Field>
+            <Field fieldType="Field" elementName="DataSource1" id="ID=271" type="TDataSource" systemType="TDataSource" isPrimitive="false" visibility="public">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TDataSource</Property>
+            </Field>
+          </Classifier>
+          <Classifier name="globals Users" id="ID=259" type="Module" visibility="public">
+            <Link targetName="PageUsers" id="ID=288" metaclass="Association Link" idref="ID=258">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">PageUsers</Property>
+              <Property name="Supplier">TPageUsers</Property>
+            </Link>
+            <Uses />
+            <Field fieldType="Field" elementName="PageUsers" id="ID=287" typeref="ID=258" type="TPageUsers" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Type">TPageUsers</Property>
+            </Field>
+          </Classifier>
+        </Package>
+      </Package>
+    </Package>
+    <Package name="Controller" id="ID=9">
+      <Diagram name="Controller" id="ID=16" metaclass="Namespace Diagram" file="default.txvpck.html">
+        <Property name="defaultDiagram">true</Property>
+        <DiagramReference id="ID=306" element="ID=11" metaclass="Class">
+          <Property name="Persistent">False</Property>
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Extends">System.TInterfacedObject</Property>
+          <Property name="Implements">Refactor.Controller.Interfaces.iController</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Sealed">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+        </DiagramReference>
+        <DiagramReference id="ID=307" element="ID=12" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <DiagramReference id="ID=318" element="ID=17" metaclass="Class">
+            <Property name="Persistent">False</Property>
+            <Property name="Extends">System.TInterfacedObject</Property>
+            <Property name="Implements">Refactor.Controller.Interfaces.iControllerEntities</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=319" element="ID=18" metaclass="Module" />
+        </DiagramReference>
+        <DiagramReference id="ID=308" element="ID=13" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <DiagramReference id="ID=320" element="ID=38" metaclass="Class">
+            <Property name="Persistent">False</Property>
+            <Property name="Extends">System.TInterfacedObject</Property>
+            <Property name="Implements">Refactor.Controller.Interfaces.iControllerServices</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=321" element="ID=39" metaclass="Module" />
+        </DiagramReference>
+        <DiagramReference id="ID=309" element="ID=14" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <DiagramReference id="ID=322" element="ID=48" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=323" element="ID=82" metaclass="Module" />
+          <DiagramReference id="ID=324" element="ID=83" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=325" element="ID=84" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=326" element="ID=27" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+          </DiagramReference>
+        </DiagramReference>
+        <DiagramReference id="ID=310" element="ID=15" metaclass="Module">
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+        </DiagramReference>
+      </Diagram>
+      <Package name="Interfaces" id="ID=14">
+        <Diagram name="Interfaces" id="ID=85" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=338" element="ID=48" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Circle view">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=339" element="ID=82" metaclass="Module">
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=340" element="ID=83" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Circle view">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=341" element="ID=84" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Circle view">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=342" element="ID=27" metaclass="Interface">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Circle view">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+        </Diagram>
+        <Classifier name="iControllerServices" id="ID=48" type="Interface" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Uses>
+            <Use element="ID=335" type="method_return_type" />
+            <Use element="ID=89" type="field_type" />
+            <Use element="ID=94" type="method_return_type" />
+            <Use element="ID=43" type="method_return_type" />
+          </Uses>
+          <Method id="ID=327" name="MercadoLivre" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=327" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=328" name="NFe" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=328" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=329" name="NFSe" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=329" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=330" name="Boleto" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=330" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+        </Classifier>
+        <Classifier name="globals Interfaces" id="ID=82" type="Module" visibility="public">
+          <Uses />
+        </Classifier>
+        <Classifier name="iControllerServicesGeneric" id="ID=83" type="Interface" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Uses>
+            <Use element="ID=327" type="method_return_type" />
+            <Use element="ID=328" type="method_return_type" />
+            <Use element="ID=329" type="method_return_type" />
+            <Use element="ID=330" type="method_return_type" />
+            <Use element="ID=331" type="method_return_type" />
+            <Use element="ID=332" type="method_return_type" />
+            <Use element="ID=333" type="method_return_type" />
+            <Use element="ID=44" type="method_return_type" />
+            <Use element="ID=45" type="method_return_type" />
+            <Use element="ID=46" type="method_return_type" />
+            <Use element="ID=47" type="method_return_type" />
+          </Uses>
+          <Method id="ID=331" name="Consultar" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=331" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=332" name="Enviar" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=332" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=333" name="Validar" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <ReturnType id="ID=333" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+        </Classifier>
+        <Classifier name="iController" id="ID=84" type="Interface" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Uses>
+            <Use element="ID=92" type="method_return_type" />
+            <Use element="ID=277" type="field_type" />
+            <Use element="ID=209" type="field_type" />
+          </Uses>
+          <Method id="ID=334" name="Entities" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerEntities</Property>
+            <ReturnType id="ID=334" typeref="ID=27" type="iControllerEntities" isPrimitive="false" />
+          </Method>
+          <Method id="ID=335" name="Services" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServices</Property>
+            <ReturnType id="ID=335" typeref="ID=48" type="iControllerServices" isPrimitive="false" />
+          </Method>
+        </Classifier>
+        <Classifier name="iControllerEntities" id="ID=27" type="Interface" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Uses>
+            <Use element="ID=334" type="method_return_type" />
+            <Use element="ID=88" type="field_type" />
+            <Use element="ID=93" type="method_return_type" />
+            <Use element="ID=24" type="method_return_type" />
+          </Uses>
+          <Method id="ID=336" name="Categorias" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+            <ReturnType id="ID=336" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+          </Method>
+          <Method id="ID=337" name="Users" visibility="public">
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iModelDAOEntity&amp;lt;TUsers&amp;gt;</Property>
+            <ReturnType id="ID=337" type="iModelDAOEntity&amp;lt;TUsers&amp;gt;" isPrimitive="true" />
+          </Method>
+        </Classifier>
+      </Package>
+      <Package name="Entities" id="ID=12">
+        <Diagram name="Entities" id="ID=19" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=354" element="ID=17" metaclass="Class">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Extends">System.TInterfacedObject</Property>
+            <Property name="Implements">Refactor.Controller.Interfaces.iControllerEntities</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=355" element="ID=18" metaclass="Module">
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+          </DiagramReference>
+        </Diagram>
+        <Classifier name="TControllerEntities" id="ID=17" type="Class" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Property name="Extends">System.TInterfacedObject</Property>
+          <Property name="Implements">Refactor.Controller.Interfaces.iControllerEntities</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Sealed">False</Property>
+          <Method id="ID=22" name="Create" isConstructor="true" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+          </Method>
+          <Method id="ID=23" name="Destroy" isSubroutine="true" visibility="public">
+            <Property name="Override">True</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <ReturnType id="ID=23" type="" isPrimitive="true" />
+          </Method>
+          <Method id="ID=24" name="New" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerEntities</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">True</Property>
+            <ReturnType id="ID=24" typeref="ID=27" type="iControllerEntities" isPrimitive="false" />
+          </Method>
+          <Method id="ID=25" name="Categorias" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=25" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+          </Method>
+          <Method id="ID=26" name="Users" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iModelDAOEntity&amp;lt;TUsers&amp;gt;</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=26" type="iModelDAOEntity&amp;lt;TUsers&amp;gt;" isPrimitive="true" />
+          </Method>
+          <Link targetName="Refactor.Controller.Interfaces.iControllerEntities" id="ID=34" metaclass="Implementation Link" idref="ID=27">
+            <Property name="Client">TControllerEntities</Property>
+            <Property name="Supplier">iControllerEntities</Property>
+          </Link>
+          <Link targetName="FCategorias" id="ID=36" metaclass="Association Link" idref="ID4=33_142886994">
+            <Property name="Type">association</Property>
+            <Property name="Directed">False</Property>
+            <Property name="Client">FCategorias</Property>
+            <Property name="Supplier">iModelDAOEntity</Property>
+          </Link>
+          <Link targetName="FUsers" id="ID=37" metaclass="Association Link" idref="ID4=33_-385546344">
+            <Property name="Type">association</Property>
+            <Property name="Directed">False</Property>
+            <Property name="Client">FUsers</Property>
+            <Property name="Supplier">iModelDAOEntity</Property>
+          </Link>
+          <Extends idref="ID=30" refFN="System.TInterfacedObject" doom="true" />
+          <Implements idref="ID=27" refFN="Refactor.Controller.Interfaces.iControllerEntities" />
+          <Uses />
+          <Field fieldType="Field" elementName="FCategorias" id="ID=20" typeref="ID=33" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="false" visibility="internal">
+            <Property name="Const">False</Property>
+            <Property name="Class">False</Property>
+            <Property name="Type">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+          </Field>
+          <Field fieldType="Field" elementName="FUsers" id="ID=21" typeref="ID=33" type="iModelDAOEntity&amp;lt;TUsers&amp;gt;" isPrimitive="false" visibility="internal">
+            <Property name="Const">False</Property>
+            <Property name="Class">False</Property>
+            <Property name="Type">iModelDAOEntity&amp;lt;TUsers&amp;gt;</Property>
+          </Field>
+        </Classifier>
+        <Classifier name="globals Entities" id="ID=18" type="Module" visibility="public">
+          <Uses />
+        </Classifier>
+      </Package>
+      <Package name="Services" id="ID=13">
+        <Diagram name="Services" id="ID=40" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=555" element="ID=38" metaclass="Class">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Extends">System.TInterfacedObject</Property>
+            <Property name="Implements">Refactor.Controller.Interfaces.iControllerServices</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=556" element="ID=39" metaclass="Module">
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+          </DiagramReference>
+        </Diagram>
+        <Classifier name="TControllerServices" id="ID=38" type="Class" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Property name="Extends">System.TInterfacedObject</Property>
+          <Property name="Implements">Refactor.Controller.Interfaces.iControllerServices</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Sealed">False</Property>
+          <Method id="ID=41" name="Create" isConstructor="true" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+          </Method>
+          <Method id="ID=42" name="Destroy" isSubroutine="true" visibility="public">
+            <Property name="Override">True</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <ReturnType id="ID=42" type="" isPrimitive="true" />
+          </Method>
+          <Method id="ID=43" name="New" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServices</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">True</Property>
+            <ReturnType id="ID=43" typeref="ID=48" type="iControllerServices" isPrimitive="false" />
+          </Method>
+          <Method id="ID=44" name="MercadoLivre" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=44" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=45" name="NFe" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=45" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=46" name="NFSe" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=46" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Method id="ID=47" name="Boleto" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Returns">iControllerServicesGeneric</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=47" typeref="ID=83" type="iControllerServicesGeneric" isPrimitive="false" />
+          </Method>
+          <Link targetName="Refactor.Controller.Interfaces.iControllerServices" id="ID=49" metaclass="Implementation Link" idref="ID=48">
+            <Property name="Client">TControllerServices</Property>
+            <Property name="Supplier">iControllerServices</Property>
+          </Link>
+          <Extends idref="ID=30" refFN="System.TInterfacedObject" doom="true" />
+          <Implements idref="ID=48" refFN="Refactor.Controller.Interfaces.iControllerServices" />
+          <Uses />
+        </Classifier>
+        <Classifier name="globals Services" id="ID=39" type="Module" visibility="public">
+          <Uses />
+        </Classifier>
+      </Package>
+      <Classifier name="TController" id="ID=11" type="Class" visibility="public">
+        <Property name="Persistent">False</Property>
+        <Property name="Extends">System.TInterfacedObject</Property>
+        <Property name="Implements">Refactor.Controller.Interfaces.iController</Property>
+        <Property name="Abstract">False</Property>
+        <Property name="Sealed">False</Property>
+        <Method id="ID=90" name="Create" isConstructor="true" visibility="public">
+          <Property name="Override">False</Property>
+          <Property name="Reintroduce">False</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Virtual">False</Property>
+          <Property name="Final">False</Property>
+        </Method>
+        <Method id="ID=91" name="Destroy" isSubroutine="true" visibility="public">
+          <Property name="Override">True</Property>
+          <Property name="Reintroduce">False</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Virtual">False</Property>
+          <Property name="Final">False</Property>
+          <ReturnType id="ID=91" type="" isPrimitive="true" />
+        </Method>
+        <Method id="ID=92" name="New" visibility="public">
+          <Property name="Override">False</Property>
+          <Property name="Reintroduce">False</Property>
+          <Property name="Returns">iController</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Virtual">False</Property>
+          <Property name="Final">False</Property>
+          <Property name="Class">True</Property>
+          <ReturnType id="ID=92" typeref="ID=84" type="iController" isPrimitive="false" />
+        </Method>
+        <Method id="ID=93" name="Entities" visibility="public">
+          <Property name="Override">False</Property>
+          <Property name="Reintroduce">False</Property>
+          <Property name="Returns">iControllerEntities</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Virtual">False</Property>
+          <Property name="Final">False</Property>
+          <Property name="Class">False</Property>
+          <ReturnType id="ID=93" typeref="ID=27" type="iControllerEntities" isPrimitive="false" />
+        </Method>
+        <Method id="ID=94" name="Services" visibility="public">
+          <Property name="Override">False</Property>
+          <Property name="Reintroduce">False</Property>
+          <Property name="Returns">iControllerServices</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Virtual">False</Property>
+          <Property name="Final">False</Property>
+          <Property name="Class">False</Property>
+          <ReturnType id="ID=94" typeref="ID=48" type="iControllerServices" isPrimitive="false" />
+        </Method>
+        <Link targetName="Refactor.Controller.Interfaces.iController" id="ID=95" metaclass="Implementation Link" idref="ID=84">
+          <Property name="Client">TController</Property>
+          <Property name="Supplier">iController</Property>
+        </Link>
+        <Link targetName="FEntities" id="ID=97" metaclass="Association Link" idref="ID=27">
+          <Property name="Type">association</Property>
+          <Property name="Directed">False</Property>
+          <Property name="Client">FEntities</Property>
+          <Property name="Supplier">iControllerEntities</Property>
+        </Link>
+        <Link targetName="FServices" id="ID=98" metaclass="Association Link" idref="ID=48">
+          <Property name="Type">association</Property>
+          <Property name="Directed">False</Property>
+          <Property name="Client">FServices</Property>
+          <Property name="Supplier">iControllerServices</Property>
+        </Link>
+        <Extends idref="ID=30" refFN="System.TInterfacedObject" doom="true" />
+        <Implements idref="ID=84" refFN="Refactor.Controller.Interfaces.iController" />
+        <Uses />
+        <Field fieldType="Field" elementName="FEntities" id="ID=88" typeref="ID=27" type="iControllerEntities" isPrimitive="false" visibility="internal">
+          <Property name="Const">False</Property>
+          <Property name="Class">False</Property>
+          <Property name="Type">iControllerEntities</Property>
+        </Field>
+        <Field fieldType="Field" elementName="FServices" id="ID=89" typeref="ID=48" type="iControllerServices" isPrimitive="false" visibility="internal">
+          <Property name="Const">False</Property>
+          <Property name="Class">False</Property>
+          <Property name="Type">iControllerServices</Property>
+        </Field>
+      </Classifier>
+      <Classifier name="globals Controller" id="ID=15" type="Module" visibility="public">
+        <Uses />
+      </Classifier>
+    </Package>
+    <Package name="Model" id="ID=8">
+      <Diagram name="Model" id="ID=54" metaclass="Namespace Diagram" file="default.txvpck.html">
+        <Property name="defaultDiagram">true</Property>
+        <DiagramReference id="ID=99" element="ID=51" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <Property name="bounds">10,10,110,144</Property>
+        </DiagramReference>
+        <DiagramReference id="ID=100" element="ID=31" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <Property name="bounds">129,1,229,150</Property>
+        </DiagramReference>
+        <DiagramReference id="ID=101" element="ID=52" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <Property name="bounds">248,1,367,152</Property>
+          <DiagramReference id="ID=122" element="ID=72" metaclass="Class">
+            <Property name="Persistent">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=123" element="ID=73" metaclass="Module" />
+        </DiagramReference>
+        <DiagramReference id="ID=102" element="ID=53" metaclass="Namespace">
+          <Property name="Gradient color 2">255, 255, 255</Property>
+          <Property name="Color Area">Whole Shape</Property>
+          <Property name="Gradient Mode">Vertical</Property>
+          <Property name="Gradient ON">False</Property>
+          <Property name="Gradient color 1">255, 255, 255</Property>
+          <Property name="bounds">110,163,210,282</Property>
+        </DiagramReference>
+      </Diagram>
+      <Package name="Entities" id="ID=51">
+        <Diagram name="Entities" id="ID=60" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=363" element="ID=58" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <DiagramReference id="ID=365" element="ID=103" metaclass="Module" />
+            <DiagramReference id="ID=366" element="ID=104" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+            </DiagramReference>
+          </DiagramReference>
+          <DiagramReference id="ID=364" element="ID=59" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <DiagramReference id="ID=392" element="ID=107" metaclass="Module" />
+            <DiagramReference id="ID=393" element="ID=108" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+            </DiagramReference>
+          </DiagramReference>
+        </Diagram>
+        <Package name="Categoria" id="ID=58">
+          <Diagram name="Categoria" id="ID=105" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=406" element="ID=103" metaclass="Module">
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=407" element="ID=104" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+            </DiagramReference>
+          </Diagram>
+          <Classifier name="globals Categoria" id="ID=103" type="Module" visibility="public">
+            <Uses />
+          </Classifier>
+          <Classifier name="TCategoria" id="ID=104" type="Class" visibility="public">
+            <Property name="Persistent">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Method id="ID=372" name="Create" isConstructor="true" visibility="public">
+              <Parameter elementName="aParent" id="ID3=372_31084764" typeref="ID=33" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+            </Method>
+            <Method id="ID=373" name="Destroy" isSubroutine="true" visibility="public">
+              <Property name="Override">True</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <ReturnType id="ID=373" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=374" name="ID_CATEGORIA" visibility="public">
+              <Parameter elementName="aValue" id="ID3=374_34837968" type="Integer" systemType="Integer" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TCategoria</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=374" typeref="ID=104" type="TCategoria" isPrimitive="false" />
+            </Method>
+            <Method id="ID=375" name="ID_CATEGORIA" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">Integer</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=375" type="Integer" systemType="Integer" isPrimitive="false" />
+            </Method>
+            <Method id="ID=376" name="DESCRICAO" visibility="public">
+              <Parameter elementName="aValue" id="ID3=376_3303123" type="String" isPrimitive="true" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TCategoria</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=376" typeref="ID=104" type="TCategoria" isPrimitive="false" />
+            </Method>
+            <Method id="ID=377" name="DESCRICAO" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">String</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=377" type="String" isPrimitive="true" />
+            </Method>
+            <Method id="ID=378" name="ICONE" visibility="public">
+              <Parameter elementName="aValue" id="ID3=378_66226448" type="TBitmap" systemType="TBitmap" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TCategoria</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=378" typeref="ID=104" type="TCategoria" isPrimitive="false" />
+            </Method>
+            <Method id="ID=379" name="ICONE" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TBitmap</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=379" type="TBitmap" systemType="TBitmap" isPrimitive="false" />
+            </Method>
+            <Method id="ID=380" name="INDICE_ICONE" visibility="public">
+              <Parameter elementName="aValue" id="ID3=380_62742061" type="Integer" systemType="Integer" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TCategoria</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=380" typeref="ID=104" type="TCategoria" isPrimitive="false" />
+            </Method>
+            <Method id="ID=381" name="INDICE_ICONE" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">Integer</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=381" type="Integer" systemType="Integer" isPrimitive="false" />
+            </Method>
+            <Method id="ID=382" name="End" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=382" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Link targetName="FParent" id="ID=387" metaclass="Association Link" idref="ID4=33_142886994">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FParent</Property>
+              <Property name="Supplier">iModelDAOEntity</Property>
+            </Link>
+            <Uses>
+              <Use element="ID=148" type="field_type" />
+              <Use element="ID=156" type="method_return_type" />
+              <Use element="ID=374" type="method_return_type" />
+              <Use element="ID=376" type="method_return_type" />
+              <Use element="ID=378" type="method_return_type" />
+              <Use element="ID=380" type="method_return_type" />
+            </Uses>
+            <Field fieldType="Field" elementName="FParent" id="ID=367" typeref="ID=33" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FDESCRICAO" id="ID=368" type="string" isPrimitive="true" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">string</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FID_CATEGORIA" id="ID=369" type="Integer" systemType="Integer" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">Integer</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FINDICE_ICONE" id="ID=370" type="Integer" systemType="Integer" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">Integer</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FICONE" id="ID=371" type="TBitmap" systemType="TBitmap" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TBitmap</Property>
+            </Field>
+          </Classifier>
+        </Package>
+        <Package name="Users" id="ID=59">
+          <Diagram name="Users" id="ID=109" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=534" element="ID=107" metaclass="Module">
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=535" element="ID=108" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+            </DiagramReference>
+          </Diagram>
+          <Classifier name="globals Users" id="ID=107" type="Module" visibility="public">
+            <Uses />
+          </Classifier>
+          <Classifier name="TUSERS" id="ID=108" type="Class" visibility="public">
+            <Property name="Persistent">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Method id="ID=397" name="Create" isConstructor="true" visibility="public">
+              <Parameter elementName="aParent" id="ID3=397_43560229" typeref="ID=33" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+            </Method>
+            <Method id="ID=398" name="ID" visibility="public">
+              <Parameter elementName="aValue" id="ID3=398_38717641" type="Integer" systemType="Integer" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TUSERS</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=398" typeref="ID=108" type="TUSERS" isPrimitive="false" />
+            </Method>
+            <Method id="ID=399" name="ID" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">Integer</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=399" type="Integer" systemType="Integer" isPrimitive="false" />
+            </Method>
+            <Method id="ID=400" name="NAME" visibility="public">
+              <Parameter elementName="aValue" id="ID3=400_49121210" type="String" isPrimitive="true" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TUSERS</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=400" typeref="ID=108" type="TUSERS" isPrimitive="false" />
+            </Method>
+            <Method id="ID=401" name="NAME" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">String</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=401" type="String" isPrimitive="true" />
+            </Method>
+            <Method id="ID=402" name="End" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=402" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Link targetName="FParent" id="ID=403" metaclass="Association Link" idref="ID4=33_-385546344">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FParent</Property>
+              <Property name="Supplier">iModelDAOEntity</Property>
+            </Link>
+            <Uses>
+              <Use element="ID=398" type="method_return_type" />
+              <Use element="ID=400" type="method_return_type" />
+              <Use element="ID=171" type="field_type" />
+              <Use element="ID=179" type="method_return_type" />
+            </Uses>
+            <Field fieldType="Field" elementName="FParent" id="ID=394" typeref="ID=33" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FNAME" id="ID=395" type="String" isPrimitive="true" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">String</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FID" id="ID=396" type="Integer" systemType="Integer" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">Integer</Property>
+            </Field>
+          </Classifier>
+        </Package>
+      </Package>
+      <Package name="DAO" id="ID=31">
+        <Diagram name="DAO" id="ID=57" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=133" element="ID=32" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="bounds">10,10,127,161</Property>
+            <DiagramReference id="ID=136" element="ID=33" metaclass="Interface">
+              <Property name="Persistent">False</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=137" element="ID=111" metaclass="Module" />
+          </DiagramReference>
+          <DiagramReference id="ID=134" element="ID=55" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="bounds">146,1,291,152</Property>
+            <DiagramReference id="ID=144" element="ID=114" metaclass="Module" />
+            <DiagramReference id="ID=145" element="ID=115" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Extends">System.TInterfacedObject</Property>
+              <Property name="Implements">Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Categoria.TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+            </DiagramReference>
+          </DiagramReference>
+          <DiagramReference id="ID=135" element="ID=56" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="bounds">146,171,269,322</Property>
+            <DiagramReference id="ID=167" element="ID=118" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Extends">System.TInterfacedObject</Property>
+              <Property name="Implements">Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Users.TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=168" element="ID=119" metaclass="Module" />
+          </DiagramReference>
+        </Diagram>
+        <Package name="Interfaces" id="ID=32">
+          <Diagram name="Interfaces" id="ID=112" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=424" element="ID=33" metaclass="Interface">
+              <Property name="Persistent">False</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Circle view">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=425" element="ID=111" metaclass="Module">
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+            </DiagramReference>
+          </Diagram>
+          <Classifier name="iModelDAOEntity&amp;lt;T&amp;gt;" id="ID=33" type="Interface" visibility="public">
+            <TemplateParameter paramName="T" />
+            <Property name="Generic Parameters">T</Property>
+            <Property name="Persistent">False</Property>
+            <Uses>
+              <Use element="ID=138" type="method_return_type" />
+              <Use element="ID=139" type="method_return_type" />
+              <Use element="ID=140" type="method_return_type" />
+              <Use element="ID=141" type="method_return_type" />
+              <Use element="ID=143" type="method_return_type" />
+              <Use element="ID=394" type="field_type" />
+              <Use element="ID3=397_43560229" type="parameter_type" />
+              <Use element="ID=367" type="field_type" />
+              <Use element="ID3=372_31084764" type="parameter_type" />
+              <Use element="ID=20" type="field_type" />
+              <Use element="ID=21" type="field_type" />
+            </Uses>
+            <Method id="ID=138" name="DataSet" visibility="public">
+              <Parameter elementName="aValue" id="ID3=138_55363057" type="TDataSource" systemType="TDataSource" isPrimitive="false" />
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;T&amp;gt;</Property>
+              <ReturnType id="ID=138" typeref="ID=33" type="iModelDAOEntity&amp;lt;T&amp;gt;" isPrimitive="false" />
+            </Method>
+            <Method id="ID=139" name="Delete" visibility="public">
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;T&amp;gt;</Property>
+              <ReturnType id="ID=139" typeref="ID=33" type="iModelDAOEntity&amp;lt;T&amp;gt;" isPrimitive="false" />
+            </Method>
+            <Method id="ID=140" name="Get" visibility="public">
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;T&amp;gt;</Property>
+              <ReturnType id="ID=140" typeref="ID=33" type="iModelDAOEntity&amp;lt;T&amp;gt;" isPrimitive="false" />
+            </Method>
+            <Method id="ID=141" name="Insert" visibility="public">
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;T&amp;gt;</Property>
+              <ReturnType id="ID=141" typeref="ID=33" type="iModelDAOEntity&amp;lt;T&amp;gt;" isPrimitive="false" />
+            </Method>
+            <Method id="ID=142" name="This" visibility="public">
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">T</Property>
+              <ReturnType id="ID=142" type="T" isPrimitive="true" />
+            </Method>
+            <Method id="ID=143" name="Update" visibility="public">
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;T&amp;gt;</Property>
+              <ReturnType id="ID=143" typeref="ID=33" type="iModelDAOEntity&amp;lt;T&amp;gt;" isPrimitive="false" />
+            </Method>
+          </Classifier>
+          <Classifier name="globals Interfaces" id="ID=111" type="Module" visibility="public">
+            <Uses />
+          </Classifier>
+        </Package>
+        <Package name="Categoria" id="ID=55">
+          <Diagram name="Categoria" id="ID=116" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=432" element="ID=114" metaclass="Module">
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=433" element="ID=115" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Extends">System.TInterfacedObject</Property>
+              <Property name="Implements">Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Categoria.TCategoria&amp;gt;</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+            </DiagramReference>
+          </Diagram>
+          <Classifier name="globals Categoria" id="ID=114" type="Module" visibility="public">
+            <Uses />
+          </Classifier>
+          <Classifier name="TModelDAOCategoria" id="ID=115" type="Class" visibility="public">
+            <Property name="Persistent">False</Property>
+            <Property name="Extends">System.TInterfacedObject</Property>
+            <Property name="Implements">Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Categoria.TCategoria&amp;gt;</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Method id="ID=149" name="Create" isConstructor="true" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+            </Method>
+            <Method id="ID=150" name="Destroy" isSubroutine="true" visibility="public">
+              <Property name="Override">True</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <ReturnType id="ID=150" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=151" name="New" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">True</Property>
+              <ReturnType id="ID=151" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=152" name="DataSet" visibility="public">
+              <Parameter elementName="aValue" id="ID3=152_29202048" type="TDataSource" systemType="TDataSource" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=152" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=153" name="Delete" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=153" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=154" name="Get" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=154" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=155" name="Insert" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=155" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=156" name="This" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TCategoria</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=156" typeref="ID=104" type="TCategoria" isPrimitive="false" />
+            </Method>
+            <Method id="ID=157" name="Update" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TCategoria&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=157" type="iModelDAOEntity&amp;lt;TCategoria&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Link targetName="Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Categoria.TCategoria&amp;gt;" id="ID=162" metaclass="Implementation Link" idref="ID4=33_142886994">
+              <Property name="Client">TModelDAOCategoria</Property>
+              <Property name="Supplier">iModelDAOEntity</Property>
+            </Link>
+            <Link targetName="FConnection" id="ID=164" metaclass="Association Link" idref="ID=158">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FConnection</Property>
+              <Property name="Supplier">iModelComponentsConnections</Property>
+            </Link>
+            <Link targetName="FEntity" id="ID=166" metaclass="Association Link" idref="ID=104">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FEntity</Property>
+              <Property name="Supplier">TCategoria</Property>
+            </Link>
+            <Extends idref="ID=30" refFN="System.TInterfacedObject" doom="true" />
+            <Implements idref="ID4=33_142886994" refFN="Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;1&amp;gt;" />
+            <Uses />
+            <Field fieldType="Field" elementName="FConnection" id="ID=146" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">iModelComponentsConnections</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FDataSet" id="ID=147" type="TDataSource" systemType="TDataSource" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TDataSource</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FEntity" id="ID=148" typeref="ID=104" type="TCategoria" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TCategoria</Property>
+            </Field>
+          </Classifier>
+        </Package>
+        <Package name="Users" id="ID=56">
+          <Diagram name="Users" id="ID=120" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=520" element="ID=118" metaclass="Class">
+              <Property name="Persistent">False</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Extends">System.TInterfacedObject</Property>
+              <Property name="Implements">Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Users.TUSERS&amp;gt;</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+            </DiagramReference>
+            <DiagramReference id="ID=521" element="ID=119" metaclass="Module">
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+            </DiagramReference>
+          </Diagram>
+          <Classifier name="TModelDAOUsers" id="ID=118" type="Class" visibility="public">
+            <Property name="Persistent">False</Property>
+            <Property name="Extends">System.TInterfacedObject</Property>
+            <Property name="Implements">Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Users.TUSERS&amp;gt;</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Method id="ID=172" name="Create" isConstructor="true" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+            </Method>
+            <Method id="ID=173" name="Destroy" isSubroutine="true" visibility="public">
+              <Property name="Override">True</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <ReturnType id="ID=173" type="" isPrimitive="true" />
+            </Method>
+            <Method id="ID=174" name="New" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">True</Property>
+              <ReturnType id="ID=174" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=175" name="DataSet" visibility="public">
+              <Parameter elementName="aValue" id="ID3=175_55028256" type="TDataSource" systemType="TDataSource" isPrimitive="false" />
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=175" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=176" name="Delete" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=176" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=177" name="Get" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=177" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=178" name="Insert" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=178" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Method id="ID=179" name="This" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">TUSERS</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=179" typeref="ID=108" type="TUSERS" isPrimitive="false" />
+            </Method>
+            <Method id="ID=180" name="Update" visibility="public">
+              <Property name="Override">False</Property>
+              <Property name="Reintroduce">False</Property>
+              <Property name="Returns">iModelDAOEntity&amp;lt;TUSERS&amp;gt;</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Virtual">False</Property>
+              <Property name="Final">False</Property>
+              <Property name="Class">False</Property>
+              <ReturnType id="ID=180" type="iModelDAOEntity&amp;lt;TUSERS&amp;gt;" isPrimitive="true" />
+            </Method>
+            <Link targetName="Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;Refactor.Model.Entities.Users.TUSERS&amp;gt;" id="ID=181" metaclass="Implementation Link" idref="ID4=33_-385546344">
+              <Property name="Client">TModelDAOUsers</Property>
+              <Property name="Supplier">iModelDAOEntity</Property>
+            </Link>
+            <Link targetName="FConnection" id="ID=183" metaclass="Association Link" idref="ID=158">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FConnection</Property>
+              <Property name="Supplier">iModelComponentsConnections</Property>
+            </Link>
+            <Link targetName="FEntity" id="ID=185" metaclass="Association Link" idref="ID=108">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">FEntity</Property>
+              <Property name="Supplier">TUSERS</Property>
+            </Link>
+            <Extends idref="ID=30" refFN="System.TInterfacedObject" doom="true" />
+            <Implements idref="ID4=33_-385546344" refFN="Refactor.Model.DAO.Interfaces.iModelDAOEntity&amp;lt;1&amp;gt;" />
+            <Uses />
+            <Field fieldType="Field" elementName="FConnection" id="ID=169" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">iModelComponentsConnections</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FDataSet" id="ID=170" type="TDataSource" systemType="TDataSource" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TDataSource</Property>
+            </Field>
+            <Field fieldType="Field" elementName="FEntity" id="ID=171" typeref="ID=108" type="TUSERS" isPrimitive="false" visibility="internal">
+              <Property name="Const">False</Property>
+              <Property name="Class">False</Property>
+              <Property name="Type">TUSERS</Property>
+            </Field>
+          </Classifier>
+          <Classifier name="globals Users" id="ID=119" type="Module" visibility="public">
+            <Uses />
+          </Classifier>
+        </Package>
+      </Package>
+      <Package name="Components" id="ID=53">
+        <Diagram name="Components" id="ID=77" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=446" element="ID=76" metaclass="Namespace">
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+        </Diagram>
+        <Package name="Connections" id="ID=76">
+          <Diagram name="Connections" id="ID=131" metaclass="Namespace Diagram" file="default.txvpck.html">
+            <Property name="defaultDiagram">true</Property>
+            <DiagramReference id="ID=454" element="ID=129" metaclass="Namespace">
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <DiagramReference id="ID=456" element="ID=447" metaclass="Module" />
+              <DiagramReference id="ID=457" element="ID=448" metaclass="Class">
+                <Property name="Persistent">False</Property>
+                <Property name="Extends">System.TInterfacedObject</Property>
+                <Property name="Implements">Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Sealed">False</Property>
+              </DiagramReference>
+            </DiagramReference>
+            <DiagramReference id="ID=455" element="ID=130" metaclass="Namespace">
+              <Property name="Gradient color 2">255, 255, 255</Property>
+              <Property name="Color Area">Whole Shape</Property>
+              <Property name="Gradient Mode">Vertical</Property>
+              <Property name="Gradient ON">False</Property>
+              <Property name="Gradient color 1">255, 255, 255</Property>
+              <DiagramReference id="ID=480" element="ID=158" metaclass="Interface">
+                <Property name="Persistent">False</Property>
+              </DiagramReference>
+              <DiagramReference id="ID=481" element="ID=451" metaclass="Module" />
+            </DiagramReference>
+          </Diagram>
+          <Package name="Firedac" id="ID=129">
+            <Diagram name="Firedac" id="ID=449" metaclass="Namespace Diagram" file="default.txvpck.html">
+              <Property name="defaultDiagram">true</Property>
+              <DiagramReference id="ID=490" element="ID=447" metaclass="Module">
+                <Property name="Gradient color 1">255, 255, 255</Property>
+                <Property name="Gradient ON">False</Property>
+                <Property name="Gradient Mode">Vertical</Property>
+                <Property name="Gradient color 2">255, 255, 255</Property>
+                <Property name="Color Area">Whole Shape</Property>
+              </DiagramReference>
+              <DiagramReference id="ID=491" element="ID=448" metaclass="Class">
+                <Property name="Persistent">False</Property>
+                <Property name="Gradient color 2">255, 255, 255</Property>
+                <Property name="Color Area">Whole Shape</Property>
+                <Property name="Gradient Mode">Vertical</Property>
+                <Property name="Extends">System.TInterfacedObject</Property>
+                <Property name="Implements">Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections</Property>
+                <Property name="Gradient ON">False</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Sealed">False</Property>
+                <Property name="Gradient color 1">255, 255, 255</Property>
+              </DiagramReference>
+            </Diagram>
+            <Classifier name="globals Firedac" id="ID=447" type="Module" visibility="public">
+              <Uses />
+            </Classifier>
+            <Classifier name="TModelComponentsConnectionsFiredac" id="ID=448" type="Class" visibility="public">
+              <Property name="Persistent">False</Property>
+              <Property name="Extends">System.TInterfacedObject</Property>
+              <Property name="Implements">Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections</Property>
+              <Property name="Abstract">False</Property>
+              <Property name="Sealed">False</Property>
+              <Method id="ID=460" name="Create" isConstructor="true" visibility="public">
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+              </Method>
+              <Method id="ID=461" name="Destroy" isSubroutine="true" visibility="public">
+                <Property name="Override">True</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <ReturnType id="ID=461" type="" isPrimitive="true" />
+              </Method>
+              <Method id="ID=462" name="New" visibility="public">
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">True</Property>
+                <ReturnType id="ID=462" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=463" name="Active" visibility="public">
+                <Parameter elementName="aValue" id="ID3=463_33783680" type="Boolean" systemType="Boolean" isPrimitive="false" />
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=463" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=464" name="AddParam" visibility="public">
+                <Parameter elementName="aParam" id="ID3=464_52123534" type="String" isPrimitive="true" />
+                <Parameter elementName="aValue" id="ID3=464_61256692" type="Variant" systemType="Variant" isPrimitive="false" />
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=464" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=465" name="AddParam" visibility="public">
+                <Parameter elementName="aParam" id="ID3=465_62845019" type="String" isPrimitive="true" />
+                <Parameter elementName="aValue" id="ID3=465_57281770" type="TPersistent" systemType="TPersistent" isPrimitive="false" />
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=465" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=466" name="DataSet" visibility="public">
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">TDataSet</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=466" type="TDataSet" systemType="TDataSet" isPrimitive="false" />
+              </Method>
+              <Method id="ID=467" name="ExecSQL" visibility="public">
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=467" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=468" name="Open" visibility="public">
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=468" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=469" name="SQL" visibility="public">
+                <Parameter elementName="aValue" id="ID3=469_9311818" type="String" isPrimitive="true" />
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=469" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=470" name="SQLClear" visibility="public">
+                <Property name="Override">False</Property>
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <Property name="Abstract">False</Property>
+                <Property name="Virtual">False</Property>
+                <Property name="Final">False</Property>
+                <Property name="Class">False</Property>
+                <ReturnType id="ID=470" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Link targetName="Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections" id="ID=476" metaclass="Implementation Link" idref="ID=158">
+                <Property name="Client">TModelComponentsConnectionsFiredac</Property>
+                <Property name="Supplier">iModelComponentsConnections</Property>
+              </Link>
+              <Extends idref="ID=30" refFN="System.TInterfacedObject" doom="true" />
+              <Implements idref="ID=158" refFN="Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections" />
+              <Uses />
+              <Field fieldType="Field" elementName="FConnection" id="ID=458" type="TFDConnection" systemType="TFDConnection" isPrimitive="false" visibility="internal">
+                <Property name="Const">False</Property>
+                <Property name="Class">False</Property>
+                <Property name="Type">TFDConnection</Property>
+              </Field>
+              <Field fieldType="Field" elementName="FQuery" id="ID=459" type="TFDQuery" systemType="TFDQuery" isPrimitive="false" visibility="internal">
+                <Property name="Const">False</Property>
+                <Property name="Class">False</Property>
+                <Property name="Type">TFDQuery</Property>
+              </Field>
+            </Classifier>
+          </Package>
+          <Package name="Interfaces" id="ID=130">
+            <Diagram name="Interfaces" id="ID=452" metaclass="Namespace Diagram" file="default.txvpck.html">
+              <Property name="defaultDiagram">true</Property>
+              <DiagramReference id="ID=505" element="ID=158" metaclass="Interface">
+                <Property name="Persistent">False</Property>
+                <Property name="Gradient color 2">255, 255, 255</Property>
+                <Property name="Color Area">Whole Shape</Property>
+                <Property name="Circle view">False</Property>
+                <Property name="Gradient Mode">Vertical</Property>
+                <Property name="Gradient ON">False</Property>
+                <Property name="Gradient color 1">255, 255, 255</Property>
+              </DiagramReference>
+              <DiagramReference id="ID=506" element="ID=451" metaclass="Module">
+                <Property name="Gradient color 1">255, 255, 255</Property>
+                <Property name="Gradient ON">False</Property>
+                <Property name="Gradient Mode">Vertical</Property>
+                <Property name="Gradient color 2">255, 255, 255</Property>
+                <Property name="Color Area">Whole Shape</Property>
+              </DiagramReference>
+            </Diagram>
+            <Classifier name="iModelComponentsConnections" id="ID=158" type="Interface" visibility="public">
+              <Property name="Persistent">False</Property>
+              <Uses>
+                <Use element="ID=482" type="method_return_type" />
+                <Use element="ID=483" type="method_return_type" />
+                <Use element="ID=484" type="method_return_type" />
+                <Use element="ID=486" type="method_return_type" />
+                <Use element="ID=487" type="method_return_type" />
+                <Use element="ID=488" type="method_return_type" />
+                <Use element="ID=489" type="method_return_type" />
+                <Use element="ID=462" type="method_return_type" />
+                <Use element="ID=463" type="method_return_type" />
+                <Use element="ID=464" type="method_return_type" />
+                <Use element="ID=465" type="method_return_type" />
+                <Use element="ID=467" type="method_return_type" />
+                <Use element="ID=468" type="method_return_type" />
+                <Use element="ID=469" type="method_return_type" />
+                <Use element="ID=470" type="method_return_type" />
+                <Use element="ID=146" type="field_type" />
+                <Use element="ID=169" type="field_type" />
+              </Uses>
+              <Method id="ID=482" name="Active" visibility="public">
+                <Parameter elementName="aValue" id="ID3=482_52089545" type="Boolean" systemType="Boolean" isPrimitive="false" />
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=482" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=483" name="AddParam" visibility="public">
+                <Parameter elementName="aParam" id="ID3=483_58503618" type="String" isPrimitive="true" />
+                <Parameter elementName="aValue" id="ID3=483_35009555" type="Variant" systemType="Variant" isPrimitive="false" />
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=483" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=484" name="AddParam" visibility="public">
+                <Parameter elementName="aParam" id="ID3=484_17201705" type="String" isPrimitive="true" />
+                <Parameter elementName="aValue" id="ID3=484_54811429" type="TPersistent" systemType="TPersistent" isPrimitive="false" />
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=484" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=485" name="DataSet" visibility="public">
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">TDataSet</Property>
+                <ReturnType id="ID=485" type="TDataSet" systemType="TDataSet" isPrimitive="false" />
+              </Method>
+              <Method id="ID=486" name="ExecSQL" visibility="public">
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=486" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=487" name="Open" visibility="public">
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=487" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=488" name="SQL" visibility="public">
+                <Parameter elementName="aValue" id="ID3=488_27757730" type="String" isPrimitive="true" />
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=488" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+              <Method id="ID=489" name="SQLClear" visibility="public">
+                <Property name="Reintroduce">False</Property>
+                <Property name="Returns">iModelComponentsConnections</Property>
+                <ReturnType id="ID=489" typeref="ID=158" type="iModelComponentsConnections" isPrimitive="false" />
+              </Method>
+            </Classifier>
+            <Classifier name="globals Interfaces" id="ID=451" type="Module" visibility="public">
+              <Uses />
+            </Classifier>
+          </Package>
+        </Package>
+      </Package>
+      <Package name="Behaviors" id="ID=52">
+        <Diagram name="Behaviors" id="ID=74" metaclass="Namespace Diagram" file="default.txvpck.html">
+          <Property name="defaultDiagram">true</Property>
+          <DiagramReference id="ID=545" element="ID=72" metaclass="Class">
+            <Property name="Persistent">False</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Sealed">False</Property>
+            <Property name="Gradient color 1">255, 255, 255</Property>
+          </DiagramReference>
+          <DiagramReference id="ID=546" element="ID=73" metaclass="Module">
+            <Property name="Gradient color 1">255, 255, 255</Property>
+            <Property name="Gradient ON">False</Property>
+            <Property name="Gradient Mode">Vertical</Property>
+            <Property name="Gradient color 2">255, 255, 255</Property>
+            <Property name="Color Area">Whole Shape</Property>
+            <DiagramReference id="ID=551" element="ID=128" metaclass="Association Link">
+              <Property name="Type">association</Property>
+              <Property name="Directed">False</Property>
+              <Property name="Client">ModelBehaviors</Property>
+              <Property name="Supplier">TModelBehaviors</Property>
+            </DiagramReference>
+          </DiagramReference>
+        </Diagram>
+        <Classifier name="TModelBehaviors" id="ID=72" type="Class" visibility="public">
+          <Property name="Persistent">False</Property>
+          <Property name="Abstract">False</Property>
+          <Property name="Sealed">False</Property>
+          <Uses>
+            <Use element="ID=127" type="field_type" />
+          </Uses>
+          <Method id="ID=124" name="BehaviorException" isSubroutine="true" visibility="internal">
+            <Parameter elementName="Sender" id="ID3=124_43386266" type="TObject" systemType="TObject" isPrimitive="false" />
+            <Parameter elementName="E" id="ID3=124_44554846" type="Exception" systemType="Exception" isPrimitive="false" />
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <Property name="Class">False</Property>
+            <ReturnType id="ID=124" type="" isPrimitive="true" />
+          </Method>
+          <Method id="ID=125" name="Create" isConstructor="true" visibility="public">
+            <Property name="Override">False</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+          </Method>
+          <Method id="ID=126" name="Destroy" isSubroutine="true" visibility="public">
+            <Property name="Override">True</Property>
+            <Property name="Reintroduce">False</Property>
+            <Property name="Abstract">False</Property>
+            <Property name="Virtual">False</Property>
+            <Property name="Final">False</Property>
+            <ReturnType id="ID=126" type="" isPrimitive="true" />
+          </Method>
+        </Classifier>
+        <Classifier name="globals Behaviors" id="ID=73" type="Module" visibility="public">
+          <Link targetName="ModelBehaviors" id="ID=128" metaclass="Association Link" idref="ID=72">
+            <Property name="Type">association</Property>
+            <Property name="Directed">False</Property>
+            <Property name="Client">ModelBehaviors</Property>
+            <Property name="Supplier">TModelBehaviors</Property>
+          </Link>
+          <Uses />
+          <Field fieldType="Field" elementName="ModelBehaviors" id="ID=127" typeref="ID=72" type="TModelBehaviors" isPrimitive="false" visibility="internal">
+            <Property name="Const">False</Property>
+            <Property name="Type">TModelBehaviors</Property>
+          </Field>
+        </Classifier>
+      </Package>
+    </Package>
+    <Classifier name="globals Refactor" id="ID=6" type="Module" visibility="public">
+      <Uses />
+    </Classifier>
+  </Package>
+  <TemplateInstantiation id="ID4=33_142886994" idref="ID=33">
+    <TemplateInstantiationParameter paramName="T" typeref="ID=104" />
+  </TemplateInstantiation>
+  <TemplateInstantiation id="ID4=33_-385546344" idref="ID=33">
+    <TemplateInstantiationParameter paramName="T" typeref="ID=108" />
+  </TemplateInstantiation>
+</Model>

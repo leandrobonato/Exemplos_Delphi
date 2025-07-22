@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="0knwucsyah8nec4jp_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.FConnection" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.FDataSet" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.FEntity" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.Create()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.New()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.DataSet(Data.DB.TDataSource)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.Delete()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.Get()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.Insert()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.This()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Users.TModelDAOUsers.Update()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Users.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+  </view>
+</nodeSet>

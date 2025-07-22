@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="693xpudpnf8jnz53t_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;.DataSet(Data.DB.TDataSource)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;.Delete()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;.Get()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;.Insert()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;.This()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;1&gt;.Update()" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.DAO.Interfaces.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+  </view>
+</nodeSet>

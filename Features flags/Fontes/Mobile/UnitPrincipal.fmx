@@ -1,0 +1,192 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Meu App'
+  ClientHeight = 566
+  ClientWidth = 368
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object TabControl1: TTabControl
+    Align = Client
+    Size.Width = 368.000000000000000000
+    Size.Height = 566.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 2
+    TabPosition = None
+    Sizes = (
+      368s
+      566s
+      368s
+      566s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      object Layout1: TLayout
+        Align = Center
+        Size.Width = 241.000000000000000000
+        Size.Height = 120.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object Rectangle1: TRectangle
+          Align = Bottom
+          Fill.Color = xFF48A4D4
+          Position.Y = 61.000000000000000000
+          Size.Width = 241.000000000000000000
+          Size.Height = 59.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          OnClick = Rectangle1Click
+          object Label2: TLabel
+            Align = Center
+            StyledSettings = [Family]
+            Size.Width = 169.000000000000000000
+            Size.Height = 28.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 20.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            TextSettings.HorzAlign = Center
+            Text = 'Acessar'
+            TabOrder = 0
+          end
+        end
+        object edtUsuario: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Text = 'heber'
+          TextSettings.Font.Size = 18.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          Size.Width = 241.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Usu'#225'rio'
+          StyledSettings = [Family, FontColor]
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      object rectBtn: TRectangle
+        Align = Bottom
+        Fill.Color = xFFAEAEAE
+        Position.Y = 507.000000000000000000
+        Size.Width = 368.000000000000000000
+        Size.Height = 59.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        OnClick = rectBtnClick
+        object lblBtn: TLabel
+          Align = Center
+          StyledSettings = [Family]
+          Size.Width = 169.000000000000000000
+          Size.Height = 28.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 20.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'lblBtn'
+          TabOrder = 0
+        end
+      end
+      object btnVoltar: TImage
+        MultiResBitmap.Height = 74
+        MultiResBitmap.Width = 74
+        MultiResBitmap = <
+          item
+            Width = 74
+            Height = 74
+            PNG = {
+              89504E470D0A1A0A0000000D494844520000004A0000004A08060000001CD0C2
+              71000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              042F49444154785EED99CB8B1C5514C6EBDE66060D6621681E4E5004BB7B04C1
+              55DC6954DC181F1B99900CE9C774278390850137C2C4851B890B51188D66C6D4
+              6324284C56092651F115FD0B5CA89D184210629C241AC649D04E755DBF537D5A
+              DB3811ADA92AAA9AF383E6DEF375CF507C7DCEB9A7AA2D411004411004411004
+              4110044110B287E235755ACDE6032A08DE309675973666F21ED73D8C8B41984D
+              34AFA9F2CDCE9DEBAD4E670ADB8D30674DA054F3DCE4E4CDDD77B349EA469DA9
+              D5D6157C7FBF52EA69969047E6B645DF2F70944952358A4C6A6B3D832C7A8A25
+              AAB5455CC44BF7DAF6AF2C6592D48C3ADD6CAE6D2B35DB6F12B86429355E74DD
+              0F39CE2CA918453DA9D3E91C40B93DC91265D28251AA56B6ED0F58CA34899F7A
+              AD6A754469BD1F99F3044BA149E84B1365D73DCA52E64934A3C8244BEBB7FB4D
+              82413FC3A87A9E4C22123B69BE6D34EE40BAD2E9D65F6EBF60A98CBAEEB1AE92
+              1F12293D32A9100433D795DB651D04DB8A9E779CA55C117B46D108005366FF61
+              92315B6152E64FB71B116B8F0AE7248C00CB9A948311E0DF88ADF4BEDFBE7D4D
+              3034E460BBB9AB50DF3617F04D54F26E12114BE9858D5BEB03D8FE6592659D87
+              562D39CE472CE59A1567D4C91D3B3658BE4F8DFB7196BA2619532DB9EEC72CE5
+              9E156554384C1A43C3647F262D40AB0C924944E48C5A6EE24653BA18A0718F7A
+              DE27AC0C0C918C0AE7246366B1FD5B4FC26B6CD471BE6269A0886454AB5E3F84
+              89FB190E4360520725B78035B52712FF155CAB8F6C9F463B7885A5FF4D24A34E
+              4E4CC08F7C810BFEADEC38919FA246FAF6311F9DE56D7E30E627DE452252469D
+              6A341E8159EF623BD25542AEE0758436782F5BE587D2C3DDC1DC4A06DFC8A7DE
+              77F5FAA3F8630FF5BF8162A4363D19D88DF49EA378D088FCCD8FBAEEA730A786
+              F4F9916298762B1617FDEB458A078DC819D5E354ADF670A0F57BF847EB288679
+              74FAEDC509B327FCC080B062A388D02CA5DE4719AE0D05637CA3D4ABA5A5A529
+              353FDF09B59C138B5144ABD178C80A029AAF6EA79833EB756BF5EAA9D2F4F4EF
+              E187724C6C4611E84F9B70E2CDF7CC2210BF76CBF0F09E919999AB2CE592588D
+              22AEEF5921C6BCD95EB5EA85FBF6ED5B622577C46E14417356100473BDD18179
+              C76AB79F2F1D3CB8C871AE48C4286259B330F40D19F3DCDD9E779995DC90D804
+              5DB4EDCFB4D65598738E257C2DAA7A4DEBB7CE8E8FD3CC952B12CBA81ECBF52C
+              9C88F38877951CE7024B9927F17BB2A2E77D4EBFE7E1F4FBF3A614268DC1AC59
+              FAD586A5CC937846F568D5EB0F62A1D1A13B9476398A59EB59DCACFEC0716649
+              ED2EBFECBA5F6219EBCF2CB01999659FAE54EEE438B3A4FA3824344BEB2D68F0
+              E18D7488528FF985C2CB28C39B58C924A91A45946DFB04CCD9864CEA2FB7FBAF
+              F9FE30EF3349EA461138EDBE4009D6915927107EADB4DE5B6CB7E9C19F200882
+              200882200882200882200882103396F507B779831283EFA7410000000049454E
+              44AE426082}
+            FileName = 
+              'D:\99Coders\Posts\243 - Conectando meu app a uma API Horse\Fonte' +
+              's\Images\back.png'
+          end>
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        OnClick = btnVoltarClick
+      end
+    end
+  end
+  object RESTClient: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    BaseURL = 'http://localhost:9000'
+    Params = <>
+    RaiseExceptionOn500 = False
+    Left = 176
+    Top = 24
+  end
+  object RESTRequest: TRESTRequest
+    Client = RESTClient
+    Params = <
+      item
+        Name = 'usuario'
+        Value = '1'
+      end>
+    Resource = 'flags'
+    SynchronizedEvents = False
+    Left = 280
+    Top = 24
+  end
+end

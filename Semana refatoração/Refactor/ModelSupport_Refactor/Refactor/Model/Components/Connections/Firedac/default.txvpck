@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="lwqac1qwohb3z6n9p_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Firedac.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.FConnection" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.FQuery" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.Create()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.Destroy()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.New()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.Active(System.Boolean)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.AddParam(System.string,System.Variant)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.AddParam(System.string,System.Classes.TPersistent)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.DataSet()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.ExecSQL()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.Open()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.SQL(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac.SQLClear()" />
+    </reference>
+  </view>
+</nodeSet>

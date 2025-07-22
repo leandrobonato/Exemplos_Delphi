@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="h0516wr7w3309ophl_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::s0i78lwegg4qch6fo_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="10,10,100,134" />
+      <reference referencedUin="design:view:::60e7vo97ge8oe3peh_v" />
+      <reference referencedUin="design:view:::fdywdzhy5f82fcrlo_v" />
+    </reference>
+    <reference referencedUin="design:view:::3p62j60b0l3txzxfm_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="129,1,100,149" />
+      <reference referencedUin="design:view:::693xpudpnf8jnz53t_v" />
+      <reference referencedUin="design:view:::21d0vfcfhg8a6q69n_v" />
+      <reference referencedUin="design:view:::0knwucsyah8nec4jp_v" />
+    </reference>
+    <reference referencedUin="design:view:::q39acar99q797xsyf_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="248,1,119,151" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Behaviors.TModelBehaviors" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Behaviors.@unitclass" />
+    </reference>
+    <reference referencedUin="design:view:::hm1qacu7oq7iopo2l_v">
+      <property name="$shortcutReference" value="true" />
+      <property name="bounds" value="110,163,100,119" />
+      <reference referencedUin="design:view:::8nxj2m63ki85mlfhi_v" />
+    </reference>
+  </view>
+</nodeSet>

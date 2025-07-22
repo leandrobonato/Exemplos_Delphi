@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="4smurlxctebmb3run_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.View.Pages.Users.TPageUsers">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Edit1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button2" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button3" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button4" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.DBGrid1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.DataSource1" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.View.Pages.Users.TPageUsers.FormCreate(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button3Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button4Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.View.Pages.Users.TPageUsers.Button2Click(System.TObject)" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.TPageUsers.FController" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.View.Pages.Users.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:l_ast:src:Refactor:Refactor.View.Pages.Users.@unitclass.PageUsers" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.View.Pages.Users.@unitclass.PageUsers" />
+    </reference>
+  </view>
+</nodeSet>

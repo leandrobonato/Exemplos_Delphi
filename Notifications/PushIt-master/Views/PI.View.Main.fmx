@@ -1,0 +1,589 @@
+object MainView: TMainView
+  Left = 0
+  Top = 0
+  Caption = 'PushIt'
+  ClientHeight = 925
+  ClientWidth = 1237
+  Position = ScreenCenter
+  StyleBook = Resources.StyleBook
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  DesignerMasterStyle = 0
+  object ResponseMemo: TMemo
+    Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+    DataDetectorTypes = []
+    StyledSettings = [Size, Style, FontColor]
+    TextSettings.Font.Family = 'Consolas'
+    Align = Bottom
+    Margins.Left = 4.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Margins.Bottom = 4.000000000000000000
+    Position.X = 4.000000000000000000
+    Position.Y = 720.000000000000000000
+    Size.Width = 1229.000000000000000000
+    Size.Height = 157.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 0
+    Viewport.Width = 1225.000000000000000000
+    Viewport.Height = 153.000000000000000000
+  end
+  object ResponseLabel: TLabel
+    Align = Bottom
+    Margins.Left = 4.000000000000000000
+    Margins.Right = 4.000000000000000000
+    Position.X = 4.000000000000000000
+    Position.Y = 699.000000000000000000
+    Size.Width = 1229.000000000000000000
+    Size.Height = 17.000000000000000000
+    Size.PlatformDefault = False
+    Text = 'Response:'
+    TabOrder = 1
+  end
+  object TabControl: TTabControl
+    Align = Client
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Margins.Top = 4.000000000000000000
+    Size.Width = 1237.000000000000000000
+    Size.Height = 646.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 0
+    TabOrder = 2
+    TabPosition = PlatformDefault
+    OnChange = TabControlChange
+    Sizes = (
+      1229s
+      612s
+      1229s
+      612s)
+    object MessageTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 67.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'Message'
+      ExplicitSize.cx = 67.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object MessageLayout: TLayout
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 1221.000000000000000000
+        Size.Height = 604.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object ChannelLabel: TLabel
+          Align = Top
+          Margins.Top = 4.000000000000000000
+          Position.Y = 57.000000000000000000
+          Size.Width = 1221.000000000000000000
+          Size.Height = 17.000000000000000000
+          Size.PlatformDefault = False
+          Text = 'Android Channel ID:'
+          TabOrder = 4
+        end
+        object ChannelIDEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 2
+          Position.Y = 78.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Size.Width = 1221.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          OnChangeTracking = MessageFieldChange
+          object ClearChannelIDEditButton: TClearEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 28.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object TokenEdit: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Position.Y = 28.000000000000000000
+          Margins.Top = 4.000000000000000000
+          Size.Width = 1221.000000000000000000
+          Size.Height = 25.000000000000000000
+          Size.PlatformDefault = False
+          object ClearTokenEditButton: TClearEditButton
+            CanFocus = False
+            Cursor = crArrow
+            Size.Width = 28.000000000000000000
+            Size.Height = 21.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+          end
+        end
+        object MessageButtonsLayout: TLayout
+          Align = Bottom
+          Padding.Left = 4.000000000000000000
+          Padding.Top = 4.000000000000000000
+          Padding.Right = 4.000000000000000000
+          Padding.Bottom = 4.000000000000000000
+          Position.Y = 560.000000000000000000
+          Size.Width = 1221.000000000000000000
+          Size.Height = 44.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 5
+          object ClearMessageFieldsButton: TButton
+            Align = Right
+            Position.X = 1073.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 144.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Clear Message Fields'
+            OnClick = ClearMessageFieldsButtonClick
+          end
+          object ClearAllFieldsButton: TButton
+            Align = Right
+            Margins.Right = 8.000000000000000000
+            Position.X = 921.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 144.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Clear All Fields'
+            OnClick = ClearAllFieldsButtonClick
+          end
+          object DevicesButton: TButton
+            Align = Left
+            Enabled = False
+            Position.X = 4.000000000000000000
+            Position.Y = 4.000000000000000000
+            Size.Width = 121.000000000000000000
+            Size.Height = 36.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 2
+            Text = 'Devices..'
+            OnClick = DevicesButtonClick
+          end
+        end
+        object SeparatorLine: TLine
+          Align = Top
+          LineType = Bottom
+          Margins.Bottom = 8.000000000000000000
+          Position.Y = 103.000000000000000000
+          Size.Width = 1221.000000000000000000
+          Size.Height = 13.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Color = claBlueviolet
+          Stroke.Thickness = 2.000000000000000000
+        end
+        object MessageFieldsLayout: TLayout
+          Align = Client
+          Size.Width = 1221.000000000000000000
+          Size.Height = 436.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object MessageTextLayout: TLayout
+            Align = Client
+            Size.Width = 805.000000000000000000
+            Size.Height = 436.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            object BodyLabel: TLabel
+              Align = Top
+              Margins.Top = 4.000000000000000000
+              Position.Y = 102.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Body:'
+              TabOrder = 4
+              TabStop = False
+              object BigTextCheckBox: TCheckBox
+                Align = Right
+                Position.X = 685.000000000000000000
+                Size.Width = 120.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 2
+                TabStop = False
+                Text = 'Big (Android)'
+              end
+            end
+            object BodyMemo: TMemo
+              Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+              DataDetectorTypes = []
+              OnChangeTracking = MessageFieldChange
+              Align = Client
+              Margins.Top = 4.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 264.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 2
+              Viewport.Width = 801.000000000000000000
+              Viewport.Height = 260.000000000000000000
+            end
+            object SubtitleEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 1
+              Position.Y = 74.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = MessageFieldChange
+            end
+            object SubtitleLabel: TLabel
+              Align = Top
+              Margins.Top = 4.000000000000000000
+              Position.Y = 53.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Subtitle:'
+              TabOrder = 6
+            end
+            object TitleEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 0
+              Position.Y = 25.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = MessageFieldChange
+            end
+            object TitleLabel: TLabel
+              Align = Top
+              Margins.Top = 4.000000000000000000
+              Position.Y = 4.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Title:'
+              TabOrder = 7
+            end
+            object ImageURLLabel: TLabel
+              Align = Bottom
+              Margins.Top = 4.000000000000000000
+              Position.Y = 391.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Image URL:'
+              TabOrder = 5
+              TabStop = False
+              object BigPictureCheckBox: TCheckBox
+                Align = Right
+                Position.X = 685.000000000000000000
+                Size.Width = 120.000000000000000000
+                Size.Height = 17.000000000000000000
+                Size.PlatformDefault = False
+                TabOrder = 4
+                TabStop = False
+                Text = 'Big (Android)'
+              end
+            end
+            object ImageURLEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Bottom
+              TabOrder = 3
+              Position.Y = 412.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Size.Width = 805.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = MessageFieldChange
+            end
+          end
+          object MessagePropsLayout: TLayout
+            Align = Right
+            Padding.Left = 8.000000000000000000
+            Padding.Right = 4.000000000000000000
+            Padding.Bottom = 4.000000000000000000
+            Position.X = 805.000000000000000000
+            Size.Width = 416.000000000000000000
+            Size.Height = 436.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            object BadgeEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 3
+              Position.X = 8.000000000000000000
+              Position.Y = 173.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = BadgeEditChangeTracking
+              OnKeyDown = BadgeEditKeyDown
+            end
+            object BadgeLabel: TLabel
+              Align = Top
+              Margins.Top = 6.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 152.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Badge:'
+              TabOrder = 8
+            end
+            object SoundLabel: TLabel
+              Align = Top
+              Margins.Top = 12.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 101.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Sound:'
+              TabOrder = 7
+            end
+            object SoundEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 2
+              Position.X = 8.000000000000000000
+              Position.Y = 122.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = MessageFieldChange
+            end
+            object ClickActionLabel: TLabel
+              Align = Top
+              Margins.Top = 6.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 203.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Click Action:'
+              TabOrder = 5
+            end
+            object ClickActionEdit: TEdit
+              Touch.InteractiveGestures = [LongTap, DoubleTap]
+              Align = Top
+              TabOrder = 4
+              Position.X = 8.000000000000000000
+              Position.Y = 224.000000000000000000
+              Margins.Top = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 24.000000000000000000
+              Size.PlatformDefault = False
+              OnChangeTracking = MessageFieldChange
+            end
+            object PriorityLabel: TLabel
+              Align = Top
+              Margins.Top = 4.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 4.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 17.000000000000000000
+              Size.PlatformDefault = False
+              Text = 'Priority:'
+              TabOrder = 6
+            end
+            object PriorityComboBox: TComboBox
+              Align = Top
+              Items.Strings = (
+                ''
+                'Normal'
+                'High')
+              ItemIndex = 0
+              Margins.Top = 5.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 26.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 22.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 0
+              OnChange = PriorityComboBoxChange
+            end
+            object ContentAvailableCheckBox: TCheckBox
+              Align = Top
+              Margins.Top = 22.000000000000000000
+              Position.X = 8.000000000000000000
+              Position.Y = 70.000000000000000000
+              Size.Width = 404.000000000000000000
+              Size.Height = 19.000000000000000000
+              Size.PlatformDefault = False
+              TabOrder = 1
+              Text = 'Content Available'
+              OnClick = ContentAvailableCheckBoxClick
+            end
+          end
+        end
+        object TokenTopicLayout: TLayout
+          Align = Top
+          Size.Width = 1221.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          object TokenRadioButton: TRadioButton
+            Align = Left
+            GroupName = 'To'
+            Size.Width = 81.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Text = 'Token'
+            OnClick = MessageTypeRadioButtonClick
+          end
+          object TopicRadioButton: TRadioButton
+            Align = Left
+            GroupName = 'To'
+            IsChecked = True
+            Position.X = 81.000000000000000000
+            Size.Width = 120.000000000000000000
+            Size.Height = 24.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Text = 'Topic'
+            OnClick = MessageTypeRadioButtonClick
+          end
+        end
+      end
+    end
+    object JSONTab: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 49.000000000000000000
+      Size.Height = 26.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'JSON'
+      ExplicitSize.cx = 49.000000000000000000
+      ExplicitSize.cy = 26.000000000000000000
+      object JSONMemo: TMemo
+        Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+        DataDetectorTypes = []
+        StyledSettings = [Size, Style, FontColor]
+        TextSettings.Font.Family = 'Consolas'
+        OnChangeTracking = JSONMemoChangeTracking
+        Align = Client
+        Margins.Left = 4.000000000000000000
+        Margins.Top = 4.000000000000000000
+        Margins.Right = 4.000000000000000000
+        Margins.Bottom = 4.000000000000000000
+        Size.Width = 1221.000000000000000000
+        Size.Height = 604.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        Viewport.Width = 1217.000000000000000000
+        Viewport.Height = 600.000000000000000000
+      end
+    end
+  end
+  object BottomLayout: TLayout
+    Align = Bottom
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Position.Y = 881.000000000000000000
+    Size.Width = 1237.000000000000000000
+    Size.Height = 44.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 3
+    object SendButton: TButton
+      Action = SendAction
+      Align = Right
+      Enabled = True
+      ImageIndex = -1
+      Position.X = 1120.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 113.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+    end
+    object LogCheckBox: TCheckBox
+      Align = Left
+      Position.X = 4.000000000000000000
+      Position.Y = 4.000000000000000000
+      Size.Width = 145.000000000000000000
+      Size.Height = 36.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 1
+      Text = 'Show log messages'
+    end
+  end
+  object ServiceAccountOpenDialog: TOpenDialog
+    Filter = 'Service Account JSON files (*.json)|*.json'
+    Options = [ofHideReadOnly, ofFileMustExist, ofEnableSizing]
+    Left = 948
+    Top = 712
+  end
+  object ServiceAccountLayout: TLayout
+    Align = Top
+    Padding.Left = 4.000000000000000000
+    Padding.Top = 4.000000000000000000
+    Padding.Right = 4.000000000000000000
+    Padding.Bottom = 4.000000000000000000
+    Size.Width = 1237.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 9
+    object ServiceAccountJSONLabel: TLabel
+      Align = Client
+      Size.Width = 1229.000000000000000000
+      Size.Height = 16.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Service Account JSON File:'
+      TabOrder = 0
+    end
+    object ServiceAccountJSONFileNameEdit: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Bottom
+      TabOrder = 1
+      Position.X = 4.000000000000000000
+      Position.Y = 20.000000000000000000
+      Size.Width = 1229.000000000000000000
+      Size.Height = 25.000000000000000000
+      Size.PlatformDefault = False
+      OnChangeTracking = ServiceAccountJSONFileNameEditChangeTracking
+      object ServiceAccountJSONFileButton: TEllipsesEditButton
+        Action = SelectServiceAccountJSONFileAction
+        CanFocus = False
+        Cursor = crArrow
+        Size.Width = 28.000000000000000000
+        Size.Height = 21.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+      end
+    end
+  end
+  object ActionList: TActionList
+    Left = 812
+    Top = 712
+    object SendAction: TAction
+      Text = 'Send'
+      OnExecute = SendActionExecute
+      OnUpdate = SendActionUpdate
+    end
+    object SelectServiceAccountJSONFileAction: TAction
+      Text = '...'
+      OnExecute = SelectServiceAccountJSONFileActionExecute
+    end
+  end
+end

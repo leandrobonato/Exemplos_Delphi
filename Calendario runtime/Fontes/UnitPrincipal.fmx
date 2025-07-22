@@ -1,0 +1,76 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Calendario'
+  ClientHeight = 518
+  ClientWidth = 328
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Kind = None
+    Sides = [Bottom]
+    Size.Width = 328.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFEDEDED
+    object lblData: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 328.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = xFF393939
+      TextSettings.HorzAlign = Center
+      Text = 'Vendas'
+      TabOrder = 1
+    end
+  end
+  object lbCalendario: TListBox
+    Align = Top
+    Margins.Top = 5.000000000000000000
+    Position.Y = 55.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 80.000000000000000000
+    Size.PlatformDefault = False
+    StyleLookup = 'transparentlistboxstyle'
+    TabOrder = 2
+    ShowScrollBars = False
+    DisableFocusEffect = True
+    DefaultItemStyles.ItemStyle = ''
+    DefaultItemStyles.GroupHeaderStyle = ''
+    DefaultItemStyles.GroupFooterStyle = ''
+    ListStyle = Horizontal
+    OnItemClick = lbCalendarioItemClick
+    Viewport.Width = 328.000000000000000000
+    Viewport.Height = 80.000000000000000000
+  end
+  object lblDataSelecao: TLabel
+    Align = Center
+    StyledSettings = [Family]
+    Size.Width = 328.000000000000000000
+    Size.Height = 69.000000000000000000
+    Size.PlatformDefault = False
+    TextSettings.Font.Size = 18.000000000000000000
+    TextSettings.Font.StyleExt = {00060000000000000004000000}
+    TextSettings.FontColor = xFF393939
+    TextSettings.HorzAlign = Center
+    Text = '00/00/0000'
+    TabOrder = 1
+  end
+  object Line1: TLine
+    Align = Top
+    LineType = Diagonal
+    Position.Y = 135.000000000000000000
+    Size.Width = 328.000000000000000000
+    Size.Height = 1.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFEDEDED
+  end
+end

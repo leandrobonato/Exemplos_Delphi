@@ -1,0 +1,327 @@
+object FrmLogin: TFrmLogin
+  Left = 0
+  Top = 0
+  Caption = 'Login'
+  ClientHeight = 554
+  ClientWidth = 375
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  DesignerMasterStyle = 0
+  object TabControl: TTabControl
+    Align = Client
+    Size.Width = 375.000000000000000000
+    Size.Height = 554.000000000000000000
+    Size.PlatformDefault = False
+    TabIndex = 1
+    TabOrder = 0
+    TabPosition = None
+    Sizes = (
+      375s
+      554s
+      375s
+      554s
+      375s
+      554s
+      375s
+      554s)
+    object TabItem1: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem1'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout1: TLayout
+        Align = Center
+        Size.Width = 268.000000000000000000
+        Size.Height = 183.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edtEmail: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF292929
+          Size.Width = 268.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'E-mail'
+          StyledSettings = [Family, Style]
+        end
+        object EdtSenha: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Password = True
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF292929
+          Position.Y = 52.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Senha'
+          StyledSettings = [Family, Style]
+        end
+        object Rectangle1: TRectangle
+          Align = Top
+          Fill.Color = xFF5A7FD1
+          Margins.Top = 20.000000000000000000
+          Position.Y = 133.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object SpeedButton1: TSpeedButton
+            Align = Client
+            Cursor = crHandPoint
+            StyledSettings = [Family]
+            Size.Width = 268.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Acessar'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+          end
+        end
+        object lblEsqueci: TLabel
+          Align = Top
+          Cursor = crHandPoint
+          StyledSettings = [Family]
+          HitTest = True
+          Margins.Top = 5.000000000000000000
+          Position.Y = 89.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 24.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = xFF5A7FD1
+          Text = 'Esqueci a minha senha'
+          TabOrder = 3
+          OnClick = lblEsqueciClick
+        end
+      end
+    end
+    object TabItem2: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = True
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem2'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object lyt: TLayout
+        Align = Center
+        Size.Width = 268.000000000000000000
+        Size.Height = 112.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edtFoneRecuperacao: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF292929
+          Size.Width = 268.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Informe seu celular'
+          StyledSettings = [Family, Style]
+        end
+        object Rectangle2: TRectangle
+          Align = Top
+          Fill.Color = xFF5A7FD1
+          Margins.Top = 20.000000000000000000
+          Position.Y = 52.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object btnRecuperar: TSpeedButton
+            Align = Client
+            Cursor = crHandPoint
+            StyledSettings = [Family]
+            Size.Width = 268.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Recuperar a senha'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = btnRecuperarClick
+          end
+        end
+      end
+    end
+    object TabItem3: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem3'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout2: TLayout
+        Align = Center
+        Size.Width = 268.000000000000000000
+        Size.Height = 180.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edtToken: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF292929
+          Position.Y = 67.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Informe o c'#243'digo'
+          StyledSettings = [Family, Style]
+        end
+        object Rectangle3: TRectangle
+          Align = Top
+          Fill.Color = xFF5A7FD1
+          Margins.Top = 20.000000000000000000
+          Position.Y = 119.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object btnToken: TSpeedButton
+            Align = Client
+            Cursor = crHandPoint
+            StyledSettings = [Family]
+            Size.Width = 268.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Pr'#243'ximo passo'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = btnTokenClick
+          end
+        end
+        object Label1: TLabel
+          Align = Top
+          Cursor = crHandPoint
+          StyledSettings = [Family]
+          HitTest = True
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 57.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = claGray
+          TextSettings.HorzAlign = Center
+          TextSettings.VertAlign = Trailing
+          Text = 'Informe abaixo o c'#243'digo que enivamos para voc'#234' por SMS:'
+          TabOrder = 3
+        end
+      end
+    end
+    object TabItem4: TTabItem
+      CustomIcon = <
+        item
+        end>
+      IsSelected = False
+      Size.Width = 8.000000000000000000
+      Size.Height = 8.000000000000000000
+      Size.PlatformDefault = False
+      StyleLookup = ''
+      TabOrder = 0
+      Text = 'TabItem4'
+      ExplicitSize.cx = 8.000000000000000000
+      ExplicitSize.cy = 8.000000000000000000
+      object Layout3: TLayout
+        Align = Center
+        Size.Width = 268.000000000000000000
+        Size.Height = 160.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object edtSenha1: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 1
+          Password = True
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF292929
+          Size.Width = 268.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Informa a nova senha'
+          StyledSettings = [Family, Style]
+        end
+        object EdtSenha2: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = Top
+          TabOrder = 0
+          Password = True
+          TextSettings.Font.Size = 14.000000000000000000
+          TextSettings.FontColor = xFF292929
+          Position.Y = 52.000000000000000000
+          Margins.Top = 20.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 32.000000000000000000
+          Size.PlatformDefault = False
+          TextPrompt = 'Confirme a nova senha'
+          StyledSettings = [Family, Style]
+        end
+        object Rectangle4: TRectangle
+          Align = Top
+          Fill.Color = xFF5A7FD1
+          Margins.Top = 20.000000000000000000
+          Position.Y = 104.000000000000000000
+          Size.Width = 268.000000000000000000
+          Size.Height = 42.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Kind = None
+          XRadius = 4.000000000000000000
+          YRadius = 4.000000000000000000
+          object btnRedefinir: TSpeedButton
+            Align = Client
+            Cursor = crHandPoint
+            StyledSettings = [Family]
+            Size.Width = 268.000000000000000000
+            Size.Height = 42.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Redefinir a senha'
+            TextSettings.Font.Size = 16.000000000000000000
+            TextSettings.Font.StyleExt = {00060000000000000004000000}
+            TextSettings.FontColor = claWhite
+            OnClick = btnRedefinirClick
+          end
+        end
+      end
+    end
+  end
+end

@@ -1,0 +1,169 @@
+
+
+{
+	"pedido": 123,
+	"cliente": "99 Coders"
+}
+
+
+
+--------------------------------------------------------------
+
+
+[
+	{
+		"pedido": 123,
+		"cliente": "99 Coders"
+	},
+	{
+		"pedido": 456,
+		"cliente": "Amazon"
+	}
+]
+
+
+--------------------------------------------------------------
+
+
+{
+	"pedido": 123,
+	"cliente": "99 Coders",
+	"itens": [
+		{
+			"id": 1,			
+			"descricao": "Monitor Dell",
+			"qtd": 2,
+			"total": 920.50
+		},
+		{
+			"id": 2,
+			"descricao": "Mouse Logitech",
+			"qtd": 3,
+			"total": 129.90
+		}
+	]
+}
+
+
+--------------------------------------------------------------
+
+
+{
+	"pedido": 123,
+	"cliente": "99 Coders",
+	"itens": [
+		{
+			"id": 1,			
+			"descricao": "Monitor Dell",
+			"qtd": 2,
+			"total": 920.50,
+			"detalhes": [
+				{"id": 1, "detalhe": "Garantia 1 ano"},
+				{"id": 2, "detalhe": "Bivolt"}
+			]
+		},
+		{
+			"id": 2,
+			"descricao": "Mouse Logitech",
+			"qtd": 3,
+			"total": 129.90,
+			"detalhes": [
+				{"id": 1, "detalhe": "Garantia 2 anos"}				
+			]
+		}
+	]
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+{
+	"pessoa": { 
+		"nome": "Heber Stein Mazutti",
+		"cpf": "000.000.000-00"
+	},	
+	
+	"endereco": { 
+		"logradouro": "Av. Brasil, 1500",
+		"bairro": "Centro",
+		"localizacao": {
+			"latitude": 10.12345,
+			"longitude": 25.12345
+		}
+	}	
+}
+
+
+
+--------------------------------------------------------------
+
+
+
+{
+	"pedido": 123,
+	"cliente": "99 Coders",
+	"endereco": {
+		"logradouro": "Av. Brasil, 1500",
+		"cidade": "São Paulo"
+	}
+}
+
+
+
+--------------------------------------------------------------
+
+
+{
+	"jsonrpc": "2.0",
+	"method": "call",
+	"params": {
+				"service": "object", 
+				"method": "execute", 
+				"args": ["db14", 2, "1234567", "template", "search_read"] 
+			}
+
+}
+
+
+
+--------------------------------------------------------------
+
+
+{
+  "retorno": {
+    "produtos": [
+      {
+        "produto": {
+          "id": "15878116285",
+          "codigo": "00239141",
+          "descricao": "Misturador Monocomando",
+          "categoria": {
+            "id": "4046406",
+            "descricao": "Categoria padrão"
+          },
+          "pesoLiq": "1.20000",
+          "pesoBruto": "1.20000",
+          "estoqueMinimo": "0.00",
+          "estoqueMaximo": "0.00",
+          "spedTipoItem": "",
+          "estoqueAtual": 10,
+          "depositos": [
+            {
+              "deposito": {
+                "id": "14886467960",
+                "nome": "Geral",
+                "saldo": 10,
+                "desconsiderar": "N",
+                "saldoVirtual": 10
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
+

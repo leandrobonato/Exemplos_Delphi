@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="8nxj2m63ki85mlfhi_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::lwqac1qwohb3z6n9p_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Firedac.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Firedac.TModelComponentsConnectionsFiredac" />
+    </reference>
+    <reference referencedUin="design:view:::imsh2tiijib85h6cg_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Interfaces.iModelComponentsConnections" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Components.Connections.Interfaces.@unitclass" />
+    </reference>
+  </view>
+</nodeSet>

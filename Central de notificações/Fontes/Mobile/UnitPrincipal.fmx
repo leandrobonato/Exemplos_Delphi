@@ -1,0 +1,174 @@
+object FrmPrincipal: TFrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Notifica'#231#227'o'
+  ClientHeight = 518
+  ClientWidth = 361
+  Fill.Kind = Solid
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object Rectangle1: TRectangle
+    Align = Top
+    Fill.Color = claWhite
+    Sides = [Bottom]
+    Size.Width = 361.000000000000000000
+    Size.Height = 49.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFD9D9D9
+    object Label1: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 361.000000000000000000
+      Size.Height = 49.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = xFF404040
+      TextSettings.HorzAlign = Center
+      Text = 'Clientes'
+      TabOrder = 2
+    end
+  end
+  object lytMessage: TLayout
+    Align = Contents
+    Size.Width = 361.000000000000000000
+    Size.Height = 518.000000000000000000
+    Size.PlatformDefault = False
+    Visible = False
+    TabOrder = 1
+    object rectFundo: TRectangle
+      Align = Contents
+      Fill.Color = claBlack
+      Opacity = 0.500000000000000000
+      Size.Width = 361.000000000000000000
+      Size.Height = 518.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+    end
+    object rectMessage: TRectangle
+      Align = Center
+      Fill.Color = claWhite
+      Size.Width = 260.000000000000000000
+      Size.Height = 360.000000000000000000
+      Size.PlatformDefault = False
+      Stroke.Kind = None
+      XRadius = 8.000000000000000000
+      YRadius = 8.000000000000000000
+      object imgIcone: TImage
+        MultiResBitmap = <
+          item
+          end>
+        Align = Top
+        Margins.Top = 25.000000000000000000
+        Position.Y = 25.000000000000000000
+        Size.Width = 260.000000000000000000
+        Size.Height = 176.000000000000000000
+        Size.PlatformDefault = False
+      end
+      object imgFechar: TImage
+        MultiResBitmap.Height = 64
+        MultiResBitmap.Width = 64
+        MultiResBitmap = <
+          item
+            Width = 64
+            Height = 64
+            PNG = {
+              89504E470D0A1A0A0000000D4948445200000040000000400806000000AA6971
+              DE000000017352474200AECE1CE90000000467414D410000B18F0BFC61050000
+              02B649444154785EED9A414F144110465751831ED4835E84ABD19F80FC7FA31C
+              BDEA010E021713F10489A2D41BB61208305DDD5D559348BFE4CBEC249BA5BF47
+              D333ECF46A30180C0683C1BDE5C1FA586243F256B22DD9949C4ABE4BBE49FE4A
+              96E491E4EAD8CE248CEDABE45C328B4500E577252FA7B3EBFC94EC497E4F67F9
+              3C917C903C9FCEAEF34BF251322B817225DE49B62E5FDEE0A9E495E458923D13
+              E6CA03B3017EAC8FB7F2707D9C83A93507336347F2783ACBA1545E298DDD2440
+              4DCE9129C15A1E8A63B70860C1B39021A1A63C14C76E11C08A6A05090C304242
+              6D79288EDDB208B2D2BF96B0E05960DAF1FE2389D7C2D852FE44F245F26F3ABB
+              038B003E80559E5296F5003C25B496FF2CF9339DCD60110094A04CB604FE94B8
+              0769296FBA37B10A806C09E1E5A14600644948290FB502205A425A7968110051
+              1252CB43AB00F096407956FB17D3998DAEF2D02300BC242C521E7A0540AF04C6
+              B04879B07E2162A1E5B7C8FFECB04879F098014AEB4CB0BE175CCB83A7006891
+              60C5BD3C780B80080921E5214200784A082B0F5102C0434268798814003D12C2
+              CB83E51BA1FF9AE819D0726FA03063C2BF728F14D0535E09971025C0A3BC122A
+              2142806779254C82B78088F20A12B89A70557193E029A0A53C973A9EE652CE82
+              BB042F01ADE5B9CEF3F0A2E63EC1558287809EF2DCE450A2F666C94D42AF80DE
+              F2CA62127A047895571691D02AC0BBBC922EA145405479255542AD80E8F24A9A
+              841A0159E59514095601D9E59570091601BC87C755D9E5951E09DC64756F9078
+              2F7973F9D2846779A55502846F93BB4A447985CFFC24D1872916D2B6C9416479
+              A5564271EC5EDBE432CA2B35125CB6C91DAE8F7791595EB14A288DDDB408EA36
+              B9DBA6D312E595D2C2C8D8DCB6C9A9C96712B6A733B5F625FC80E256B44090A0
+              9B21D9C7A8633B9030B6E276F9C16030180C06F795D5EA02184403FBA6994828
+              0000000049454E44AE426082}
+            FileName = 
+              'D:\99Coders\Posts\203 - Central notifica'#231#245'es global no seu app -' +
+              '-----\FontesFull\Mobile\Images\close.png'
+          end>
+        Position.X = 8.000000000000000000
+        Position.Y = 8.000000000000000000
+        Size.Width = 35.000000000000000000
+        Size.Height = 35.000000000000000000
+        Size.PlatformDefault = False
+        OnClick = imgFecharClick
+      end
+      object lblMsg: TLabel
+        Align = Top
+        StyledSettings = [Family, Style]
+        Margins.Left = 20.000000000000000000
+        Margins.Right = 20.000000000000000000
+        Position.X = 20.000000000000000000
+        Position.Y = 201.000000000000000000
+        Size.Width = 220.000000000000000000
+        Size.Height = 79.000000000000000000
+        Size.PlatformDefault = False
+        TextSettings.Font.Size = 16.000000000000000000
+        TextSettings.FontColor = xFF3B3B3B
+        TextSettings.HorzAlign = Center
+        Text = 'xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx xxxxx '
+        TabOrder = 2
+      end
+      object rectButton: TRectangle
+        Align = Bottom
+        Corners = [BottomLeft, BottomRight]
+        Fill.Color = xFFEF4F25
+        Position.Y = 300.000000000000000000
+        Size.Width = 260.000000000000000000
+        Size.Height = 60.000000000000000000
+        Size.PlatformDefault = False
+        Stroke.Kind = None
+        XRadius = 8.000000000000000000
+        YRadius = 8.000000000000000000
+        OnClick = rectButtonClick
+        object lblButton: TLabel
+          Align = Client
+          StyledSettings = [Family]
+          Margins.Left = 10.000000000000000000
+          Margins.Top = 10.000000000000000000
+          Margins.Right = 10.000000000000000000
+          Margins.Bottom = 10.000000000000000000
+          Size.Width = 240.000000000000000000
+          Size.Height = 40.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.Size = 16.000000000000000000
+          TextSettings.Font.StyleExt = {00060000000000000004000000}
+          TextSettings.FontColor = claWhite
+          TextSettings.HorzAlign = Center
+          Text = 'xxxxx xxxxxxx'
+          TabOrder = 2
+        end
+      end
+    end
+  end
+  object TabMessage: TFDMemTable
+    FetchOptions.AssignedValues = [evMode]
+    FetchOptions.Mode = fmAll
+    ResourceOptions.AssignedValues = [rvSilentMode]
+    ResourceOptions.SilentMode = True
+    UpdateOptions.AssignedValues = [uvCheckRequired, uvAutoCommitUpdates]
+    UpdateOptions.CheckRequired = False
+    UpdateOptions.AutoCommitUpdates = True
+    Left = 48
+    Top = 72
+  end
+end

@@ -1,0 +1,117 @@
+object FrmBuscaCliente: TFrmBuscaCliente
+  Left = 0
+  Top = 0
+  Caption = 'Pequisar Clientes'
+  ClientHeight = 564
+  ClientWidth = 405
+  Fill.Kind = Solid
+  Position = MainFormCenter
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object rectToolbar: TRectangle
+    Align = Top
+    Fill.Color = xFF1071C3
+    Size.Width = 405.000000000000000000
+    Size.Height = 50.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Kind = None
+    object Label2: TLabel
+      Align = Contents
+      StyledSettings = [Family]
+      Size.Width = 405.000000000000000000
+      Size.Height = 50.000000000000000000
+      Size.PlatformDefault = False
+      TextSettings.Font.Size = 18.000000000000000000
+      TextSettings.Font.StyleExt = {00060000000000000004000000}
+      TextSettings.FontColor = claWhite
+      TextSettings.HorzAlign = Center
+      Text = 'Pesquisar Clientes'
+      TabOrder = 0
+    end
+  end
+  object rectBusca: TRectangle
+    Align = Top
+    Cursor = crHandPoint
+    Fill.Color = claWhite
+    Position.Y = 50.000000000000000000
+    Size.Width = 405.000000000000000000
+    Size.Height = 75.000000000000000000
+    Size.PlatformDefault = False
+    Stroke.Color = xFFD6D6D6
+    object edtBusca: TEdit
+      Touch.InteractiveGestures = [LongTap, DoubleTap]
+      Align = Client
+      TabOrder = 0
+      TextSettings.Font.Size = 14.000000000000000000
+      TextSettings.FontColor = xFF686868
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      Size.Width = 295.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      TextPrompt = 'Pesquisar...'
+      StyledSettings = [Family, Style]
+    end
+    object btnBuscar: TSpeedButton
+      Align = Right
+      StyledSettings = [Family, Style]
+      Margins.Left = 10.000000000000000000
+      Margins.Top = 15.000000000000000000
+      Margins.Right = 10.000000000000000000
+      Margins.Bottom = 15.000000000000000000
+      Position.X = 315.000000000000000000
+      Position.Y = 15.000000000000000000
+      Size.Width = 80.000000000000000000
+      Size.Height = 45.000000000000000000
+      Size.PlatformDefault = False
+      Text = 'Buscar'
+      TextSettings.Font.Size = 16.000000000000000000
+      TextSettings.FontColor = xFF0D5B9D
+      OnClick = btnBuscarClick
+    end
+  end
+  object lvCliente: TListView
+    ItemAppearanceClassName = 'TDynamicAppearance'
+    ItemEditAppearanceClassName = 'TDynamicAppearance'
+    HeaderAppearanceClassName = 'TListHeaderObjects'
+    FooterAppearanceClassName = 'TListHeaderObjects'
+    ItemSpaces.Left = 0.000000000000000000
+    ItemSpaces.Right = 0.000000000000000000
+    Align = Client
+    Size.Width = 405.000000000000000000
+    Size.Height = 439.000000000000000000
+    Size.PlatformDefault = False
+    TabOrder = 1
+    ItemAppearance.ItemHeight = 50
+    ItemAppearanceObjects.ItemObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'txtCliente'
+        AppearanceClassName = 'TTextObjectAppearance'
+        Appearance.Font.Size = 14.000000000000000000
+        Appearance.TextAlign = Leading
+        Appearance.TextColor = xFFA3A3A3
+        Appearance.Width = 302.000000000000000000
+        Appearance.Height = 22.000000000000000000
+        Appearance.PlaceOffset.X = 9.000000000000000000
+        Appearance.PlaceOffset.Y = 13.000000000000000000
+      end
+      item
+        AppearanceObjectName = 'Accessory3'
+        AppearanceClassName = 'TAccessoryObjectAppearance'
+        Appearance.Width = 25.000000000000000000
+        Appearance.Align = Trailing
+      end>
+    ItemAppearanceObjects.ItemEditObjects.ObjectsCollection = <
+      item
+        AppearanceObjectName = 'Text1'
+        AppearanceClassName = 'TTextObjectAppearance'
+      end>
+    CanSwipeDelete = False
+    OnItemClick = lvClienteItemClick
+    ShowSelection = False
+  end
+end

@@ -1,0 +1,60 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{878BE23E-3EBB-4335-B163-2109BCE94A5C}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Refactor.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="RefactorTest.dproj">
+            <Dependencies/>
+        </Projects>
+        <Projects Include="..\..\..\Downloads\Firedac\Nota.dproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Refactor">
+        <MSBuild Projects="Refactor.dproj"/>
+    </Target>
+    <Target Name="Refactor:Clean">
+        <MSBuild Projects="Refactor.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Refactor:Make">
+        <MSBuild Projects="Refactor.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="RefactorTest">
+        <MSBuild Projects="RefactorTest.dproj"/>
+    </Target>
+    <Target Name="RefactorTest:Clean">
+        <MSBuild Projects="RefactorTest.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="RefactorTest:Make">
+        <MSBuild Projects="RefactorTest.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Nota">
+        <MSBuild Projects="..\..\..\Downloads\Firedac\Nota.dproj"/>
+    </Target>
+    <Target Name="Nota:Clean">
+        <MSBuild Projects="..\..\..\Downloads\Firedac\Nota.dproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Nota:Make">
+        <MSBuild Projects="..\..\..\Downloads\Firedac\Nota.dproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Refactor;RefactorTest;Nota"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Refactor:Clean;RefactorTest:Clean;Nota:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Refactor:Make;RefactorTest:Make;Nota:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>

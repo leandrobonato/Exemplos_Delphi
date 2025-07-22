@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="fdywdzhy5f82fcrlo_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Users.@unitclass">
+      <property name="$shortcutReference" value="true" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Users.TUSERS">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Users.TUSERS.FParent" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Users.TUSERS.FNAME" />
+      <reference referencedUin="delphi:e_field:src:Refactor:Refactor.Model.Entities.Users.TUSERS.FID" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Users.TUSERS.Create(Refactor.Model.DAO.Interfaces.iModelDAOEntity&lt;Refactor.Model.Entities.Users.TUSERS&gt;)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Users.TUSERS.ID(System.Integer)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Users.TUSERS.ID()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Users.TUSERS.NAME(System.string)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Users.TUSERS.NAME()" />
+      <reference referencedUin="delphi:e_method:src:Refactor:Refactor.Model.Entities.Users.TUSERS.End()" />
+    </reference>
+  </view>
+</nodeSet>

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="6wol06ufscbqcbhrk_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="delphi:e_class:src:Refactor:uFormPrincipal.TForm1">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.DBGrid1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.DataSource1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Button1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Edit1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Image1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Button2" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Button3" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Button4" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.Button5" />
+      <reference referencedUin="delphi:e_method:src:Refactor:uFormPrincipal.TForm1.Button1Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:uFormPrincipal.TForm1.Button2Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:uFormPrincipal.TForm1.FormCreate(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:uFormPrincipal.TForm1.Button3Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:uFormPrincipal.TForm1.Button4Click(System.TObject)" />
+      <reference referencedUin="delphi:e_method:src:Refactor:uFormPrincipal.TForm1.Button5Click(System.TObject)" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.TForm1.FController" />
+    </reference>
+    <reference referencedUin="delphi:e_class:src:Refactor:uFormPrincipal.@unitclass">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:l_ast:src:Refactor:uFormPrincipal.@unitclass.Form1" />
+      <reference referencedUin="delphi:e_field:src:Refactor:uFormPrincipal.@unitclass.Form1" />
+    </reference>
+  </view>
+</nodeSet>

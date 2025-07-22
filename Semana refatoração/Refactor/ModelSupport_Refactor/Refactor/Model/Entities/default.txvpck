@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nodeSet version="1.0">
+  <view uin="s0i78lwegg4qch6fo_v">
+    <property name="$defaultDiagram" value="true" />
+    <property name="$metaclass" value="Package Diagram" />
+    <property name="$name" value="default" />
+    <reference referencedUin="design:view:::60e7vo97ge8oe3peh_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Categoria.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Categoria.TCategoria" />
+    </reference>
+    <reference referencedUin="design:view:::fdywdzhy5f82fcrlo_v">
+      <property name="$shortcutReference" value="true" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Users.@unitclass" />
+      <reference referencedUin="delphi:e_class:src:Refactor:Refactor.Model.Entities.Users.TUSERS" />
+    </reference>
+  </view>
+</nodeSet>
