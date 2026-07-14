@@ -52,3 +52,35 @@ OSX32/
 *.projdata
 *.tvsconfig
 *.dsk
+
+#
+# Node.js (backends / web em alguns exemplos)
+#
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+.env
+.env.local
+
+#
+# Arquivos compactados / instaladores de terceiros (não versionar)
+#
+*.7z
+*.zip
+*.rar
+*.tar.gz
+*.tgz
+*.pkg
+*.msi
+*.apk
+*.ipa
+
+#
+# IDEs / editores
+#
+.vscode/
+.idea/
+Thumbs.db
+.DS_Store
